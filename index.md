@@ -12,6 +12,8 @@ This site is still a work in progress
     - [CHOP HPC](clusters/chop_hpc.md)
     - [CUBIC](clusters/cubic.md)
     - [PMACS](clusters/pmacs.md)
+- Uncategorized
+    - [Report Annotating](report_annotating.md)
 
 
 ### Contributors
