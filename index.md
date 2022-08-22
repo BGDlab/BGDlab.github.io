@@ -3,6 +3,17 @@
 This site is still a work in progress
 
 
+### Skeleton
+
+- [Admin](admin/index.md)
+    - [Onboarding](admin/onboarding.md)
+    - [Requesting Reimbursements](admin/requesting_reimbursements.md)
+- [Clusters](clusters/index.md)
+    - [CHOP HPC](clusters/chop_hpc.md)
+    - [CUBIC](clusters/cubic.md)
+    - [PMACS](clusters/pmacs.md)
+
+
 ### Contributors
 
 - @aaronab
