@@ -1,4 +1,4 @@
-### Conference reimbursement process
+*Conference reimbursement process*
 
 Preparation: The expense report process will be much easier if you collect all your receipts and credit card statements before you get started.  I believe that for conferences, they won’t reimburse you until after the date of the conference. You have to upload the receipt, proof you were there (like a program booklet or name badge or something), and then proof you paid it. You can take a screenshot of your bank statement, blur out any account info except last 4 digits, and show the amount and date match what’s on the receipt.) Note, you can start populating the report before the conference with any and all receipts, then submit it after the conference
 

@@ -1,4 +1,4 @@
-# CUBIC
+*CUBIC*
 
 A Penn HPC. Uses SGE for job launching. 
 
