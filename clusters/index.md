@@ -2,10 +2,10 @@
 
 ## Penn Clusters
 
-[CUBIC](cubic.md)
-[PMACS](pmacs.md)
+- [CUBIC](cubic.md)
+- [PMACS](pmacs.md)
 
 ## CHOP Clusters
 
-[Arcus Labs](arcus.md)
-[Respublica](respublica.md)
+- [Arcus Labs](arcus.md)
+- [Respublica](respublica.md)

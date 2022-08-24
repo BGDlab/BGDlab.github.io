@@ -1,3 +1,7 @@
+*PMACS*
+
+A Penn cluster. Uses `bsub`.
+
 ### Connecting to PMACS
 
 Don't need to connect via vpn
