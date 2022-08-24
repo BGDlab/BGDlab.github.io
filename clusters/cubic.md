@@ -1,4 +1,8 @@
-# Getting up and running on [[CUBIC]]
+# CUBIC
+
+A Penn HPC. Uses SGE for job launching. 
+
+## Getting up and running on [[CUBIC]]
 
 ## 1. Get a project
 
