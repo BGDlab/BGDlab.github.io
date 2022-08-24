@@ -1,3 +1,5 @@
+Annotation Guidelines - Arcus
+
 Overall Purpose
 
 
@@ -7,7 +9,7 @@ Overall Purpose
 * There are two ways of curating a dataset of people with confirmed psychosis
     * Clinical interviews are more reliable since these cases are determined by a psychiatrist
     * Using these terms in the notes is less reliable
-* SO, Harshini is going through the notes and looking for ways to improve the correlation between these two ways of identification 
+* Harshini is going through the notes and looking for ways to improve the correlation between these two ways of identification 
     * Ex: exclude negated terms to make the correlation stronger
     * By annotating, you are contributing to this process
 
