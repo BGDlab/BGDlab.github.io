@@ -57,9 +57,8 @@ Modifiers
     * Post sedation psychosis
     * Post-op psychosis
 * HistoryOf
-    * Family history
-    * Had symptoms in the past
-    * Often used with SubjectIsNotPatient
+    * The patient or a family member had symptoms in the past
+    * Not excluded from analyses
 * SubjectIsNotPatient
     * A family member has psychotic symptoms
 * DiscussionOrGeneric
