@@ -34,6 +34,7 @@ The [Brain-Gene-Development Lab](www.bgdlab.org) is part of both Penn and CHOP, 
 Here’s a great sample email from a lab member that covered all of the bases. All of this may not be necessary depending on circumstances!
 <span style="font-family:Papyrus; font-size: small;">
 > Dear Stace, Sherry, Kosha and Nina,
+>
 > I’m joining the Brain-Gene-Development Lab as a *** and want to complete any necessary onboarding! Currently I am ***. Aaron asked me to include a picture so that Nina can introduce me to the Section and LiBI (see attached) and to ask about the following items related to Penn:
 > * A Pennkey
 > * A Penn ID and Penn card to access Richards
@@ -48,6 +49,7 @@ Here’s a great sample email from a lab member that covered all of the bases. A
 > * VPN and Virtual Desktop and Access
 > 
 > Thanks so much for your help with all of this!
+> 
 > Best, ***
 <span>
 3.   Complete required CITI Research Trainings (www.citiprogram.org)
