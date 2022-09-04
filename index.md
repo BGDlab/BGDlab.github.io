@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to the BGDLab Wiki. This site is meant for internal use and is hosted from [our GitHub repository](https://github.com/BGDlab/BGDlab.github.io). For public-facing information see the [BGDLab webpage](https://www.bgdlab.org).
+Welcome to the BGDLab Wiki. This site is meant for internal use and is hosted from [our GitHub repository](https://github.com/BGDlab/BGDlab.github.io). For public-facing information see the [BGDLab webpage](https://www.bgdlab.org). If you are new to the lab, check out [the onboarding page](https://bgdlab.github.io/admin/onboarding.html).
 
 ## About us
 
