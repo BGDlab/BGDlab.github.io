@@ -31,9 +31,9 @@ Conversion notes:
 * Kosha Ruperal [kruparel@pennmedicine.upenn.edu](mailto:kruparel@pennmedicine.upenn.edu)
 * Nina Laney [laneyn@email.chop.edu](mailto:laneyn@email.chop.edu) 
 
-#### 
-    Here’s a great sample email from a lab member that covered all of the bases. All of this may not be necessary depending on circumstances!
+Here’s a great sample email from a lab member that covered all of the bases. All of this may not be necessary depending on circumstances!
 
+#### 
 
         Dear Stace, Sherry, Kosha and Nina,
 
@@ -47,7 +47,6 @@ Conversion notes:
 * UPHS VPN access (so that I can access the CUBIC cluster from off campus)
 * Penn email account
 
-#### 
         And related to CHOP:
 
 * An eResearch account so that I can access Respublica and the BGD Lab fileshare (bgdlab_resnas03)
@@ -57,6 +56,8 @@ Conversion notes:
         Thanks so much for your help with all of this!
 
         Best, ***
+
+#### 
 
 3.   Complete required CITI Research Trainings (www.citiprogram.org)
 * Affiliate with both CHOP and Penn on the CITI website
