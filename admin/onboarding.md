@@ -32,32 +32,28 @@ Conversion notes:
 * Nina Laney [laneyn@email.chop.edu](mailto:laneyn@email.chop.edu) 
 
 Here’s a great sample email from a lab member that covered all of the bases. All of this may not be necessary depending on circumstances!
-
-#### 
-
-        Dear Stace, Sherry, Kosha and Nina,
-
-
-        I’m joining the Brain-Gene-Development Lab as a *** and want to complete any necessary onboarding! Currently I am ***. Aaron asked me to include a picture so that Nina can introduce me to the Section and LiBI (see attached) and to ask about the following items related to Penn:
-
-* A Pennkey
-* A Penn ID and Penn card to access Richards
-* A key to open offices in Richards
-* Access to PMACS LPC
-* UPHS VPN access (so that I can access the CUBIC cluster from off campus)
-* Penn email account
-
-        And related to CHOP:
-
-* An eResearch account so that I can access Respublica and the BGD Lab fileshare (bgdlab_resnas03)
-* CHOP email account
-* VPN and Virtual Desktop and Access
-
-        Thanks so much for your help with all of this!
-
-        Best, ***
-
-#### 
+ 
+>
+>       Dear Stace, Sherry, Kosha and Nina,
+>
+> I’m joining the Brain-Gene-Development Lab as a *** and want to complete any necessary onboarding! Currently I am ***. Aaron asked me to include a picture so that Nina can introduce me to the Section and LiBI (see attached) and to ask about the following items related to Penn:
+>
+> * A Pennkey
+> * A Penn ID and Penn card to access Richards
+> * A key to open offices in Richards
+> * Access to PMACS LPC
+> * UPHS VPN access (so that I can access the CUBIC cluster from off campus)
+> * Penn email account
+> 
+>   And related to CHOP:
+>
+> * An eResearch account so that I can access Respublica and the BGD Lab fileshare (bgdlab_resnas03)
+> * CHOP email account
+> * VPN and Virtual Desktop and Access
+> 
+>         Thanks so much for your help with all of this!
+> 
+>         Best, ***
 
 3.   Complete required CITI Research Trainings (www.citiprogram.org)
 * Affiliate with both CHOP and Penn on the CITI website
