@@ -32,7 +32,7 @@ The [Brain-Gene-Development Lab](www.bgdlab.org) is part of both Penn and CHOP, 
 * Nina Laney [laneyn@email.chop.edu](mailto:laneyn@email.chop.edu) 
 
 Here’s a great sample email from a lab member that covered all of the bases. All of this may not be necessary depending on circumstances!
-<span style="font-family:Papyrus; font-size:0.6em;">
+<span style="font-family:Papyrus; font-size: small;">
 > Dear Stace, Sherry, Kosha and Nina,
 >
 > I’m joining the Brain-Gene-Development Lab as a *** and want to complete any necessary onboarding! Currently I am ***. Aaron asked me to include a picture so that Nina can introduce me to the Section and LiBI (see attached) and to ask about the following items related to Penn:
