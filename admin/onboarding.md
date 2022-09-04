@@ -44,7 +44,7 @@ Here’s a great sample email from a lab member that covered all of the bases. A
 > * Penn email account
 > 
 > And related to CHOP:
-> * An eResearch account so that I can access Respublica and the BGD Lab fileshare (bgdlab_resnas03)
+> * An eResearch account so that I can access Respublica and the BGD Lab fileshare (`bgdlab_resnas03`)
 > * CHOP email account
 > * VPN and Virtual Desktop and Access
 > 
@@ -63,7 +63,7 @@ Here’s a great sample email from a lab member that covered all of the bases. A
 4. Check out some helpful links
 * Once you have PennKey access, you can go to [https://wiki.pmacs.upenn.edu/neuropsych/Administrative](https://wiki.pmacs.upenn.edu/neuropsych/Administrative) and get additional information related to onboarding.
 * [This wiki](https://bgdlab.github.io/) contains helpful information maintained by lab members
-* The [PennLINC wiki ](https://pennlinc.github.io/)contains a lot of information that is also applicable to BGDlab 
+* The [PennLINC wiki](https://pennlinc.github.io/)contains a lot of information that is also applicable to BGDlab 
 * [https://www.bgdlab.org/](https://www.bgdlab.org/) is our public-facing website. Ask Aaron about getting added to “the Team”.
 
-5. Please help to keep this documentation up to date letting us know if something is wrong or if there is other information that would be helpful.
+5. Please help to keep [this documentation](https://github.com/BGDlab/BGDlab.github.io/blob/main/admin/onboarding.md) up to date letting us know if something is wrong or if there is other information that would be helpful.
