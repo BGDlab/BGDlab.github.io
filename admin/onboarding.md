@@ -23,7 +23,7 @@ Conversion notes:
 
 The [Brain-Gene-Development Lab](www.bgdlab.org) is part of both Penn and CHOP, so people affiliated with either institution can join. At Penn, we are part of the [Neurodevelopment and Psychosis Section](https://www.med.upenn.edu/bbl/). At CHOP, we are part of the [Lifespan Brain Institute (LiBI)](https://www.research.chop.edu/libi/). Thankfully, LiBI and the Section are led by the same faculty, so this is not as confusing as it sounds! We recommend that new lab members complete onboarding at both Penn and CHOP, though in some instances this may not be necessary. The basic process is:
 
-1. Have Aaron add you to lab Slack https://bgdlab.slack.com
+1. Have Aaron add you to lab Slack [https://bgdlab.slack.com](https://bgdlab.slack.com)
 
 2. Send an email to the following group of administrators/generally-helpful-people. They can be busy so just email them again after a couple of working days and _cc_ Aaron if you don’t hear back.
 * Stace Moore [stacem@pennmedicine.upenn.edu](mailto:stacem@pennmedicine.upenn.edu)
