@@ -1,4 +1,4 @@
-This is a default readme.
+This is a default readme. The wiki hosted hosted from this repository is located at https://bgdlab.github.io/.
 
 ## Welcome to GitHub Pages
 
