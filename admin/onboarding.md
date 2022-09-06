@@ -54,7 +54,6 @@ The [Brain-Gene-Development Lab](www.bgdlab.org) is part of both Penn and CHOP, 
     <span>
        
 3.   Complete required CITI Research Trainings (www.citiprogram.org)
- 
     * Affiliate with both CHOP and Penn on the CITI website
     * Complete Basic Human Protections Training (either biomedical OR social behavioral focus)
     * Complete Good Clinical Practice Training
