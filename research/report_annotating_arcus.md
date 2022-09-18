@@ -5,7 +5,7 @@ Overall Purpose
 
 
 * Modify the terms that do not directly indicate the patient has the symptoms of interest
-* Adding a modifier is excluding that term from Harshini’s analysis
+* Adding a modifier is possibly excluding that term from Harshini’s analysis
 * There are two ways of curating a dataset of people with confirmed psychosis or a behavioral disorder
     * Clinical interviews are more reliable since these cases are determined by a psychiatrist
     * Using the terms in the notes is less reliable
