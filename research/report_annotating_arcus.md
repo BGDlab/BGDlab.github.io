@@ -68,6 +68,6 @@ Modifiers
 * SubjectIsNotPatient
     * A family member has the symptom of interest
 * DiscussionOrGeneric
-    * General question on a physician’s checklist - does the patient have symptoms of psychosis?
+    * General question on a physician’s checklist - does the patient have the symptom of interest?
         * If checked yes, do not modify
     * General discussion of symptoms related to a disease
