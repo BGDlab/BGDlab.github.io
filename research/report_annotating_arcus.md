@@ -40,7 +40,7 @@ Behavioral Terms to Look For
 * Anxiety (sign or symptom/disorder or disease)
 * Depression (sign or symptom/disorder or disease)
 * Autism or autism spectrum disorder or ASD (disorder or disease)
-  * Note: ASD can represent autism spectrum disorder or atrial septal defect. The notes automatically marks ASD as atrial septal defect, so when the context sounds appropriate for autism spectrum disorder, change the label.
+  * Note: ASD can represent autism spectrum disorder or atrial septal defect. The notes automatically mark ASD as atrial septal defect, so when the context sounds appropriate for autism spectrum disorder, change the label.
  
 Modifiers
 
