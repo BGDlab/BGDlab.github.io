@@ -66,7 +66,7 @@ Modifiers
     * The patient or a family member had symptoms in the past
     * Not excluded from analyses
 * SubjectIsNotPatient
-    * A family member has psychotic symptoms
+    * A family member has the symptom of interest
 * DiscussionOrGeneric
     * General question on a physician’s checklist - does the patient have symptoms of psychosis?
         * If checked yes, do not modify
