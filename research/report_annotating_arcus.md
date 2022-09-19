@@ -6,12 +6,12 @@ Overall Purpose
 
 * Modify the terms that do not directly indicate the patient has the symptoms of interest
 * Adding a modifier is possibly excluding that term from Harshini’s analysis
-* There are two ways of curating a dataset of people with confirmed psychosis or a behavioral disorder
+* There are two ways of curating a dataset of people with confirmed specific diagnoses or pathological conditions
     * Clinical interviews are more reliable since these cases are determined by a psychiatrist
     * Using the terms in the notes is less reliable
 * Harshini is going through the notes and looking for ways to improve the correlation between these two ways of identification 
     * Ex: exclude negated terms to make the correlation stronger
-    * By annotating, you are contributing to this process
+    * Your manual review contributes to this process
 
 Directions
 
@@ -40,7 +40,7 @@ Behavioral Terms to Look For
 * Anxiety (sign or symptom/disorder or disease)
 * Depression (sign or symptom/disorder or disease)
 * Autism or autism spectrum disorder or ASD (disorder or disease)
-  * Note: ASD can represent autism spectrum disorder or atrial septal defect. The notes automatically mark ASD as atrial septal defect, so when the context sounds appropriate for autism spectrum disorder, change the label.
+  * Note: ASD can represent autism spectrum disorder or atrial septal defect. The natural language processing automatically marks ASD as atrial septal defect, so when the context sounds appropriate for autism spectrum disorder, change the label.
  
 Modifiers
 
