@@ -16,6 +16,6 @@ NTP (Non-Traditional Personnel) Onboarding Process Overview
 * Complete the CITI training - needed for Arcus access
 * Complete the CHOP research safety training
     * Review the PDF trainings for fire and life safety and sign the acknowledgment form
-* Complete your self-registration, and claim your CHOP digital identity
+* Complete your self-registration and claim your CHOP digital identity
     * Receive your user ID, employeeID, and CHOPKey
 * Complete your learning assignments on myCareer
