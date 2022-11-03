@@ -23,7 +23,7 @@ Log in to [CIRRUS](https://www.research.chop.edu/applications/cirrus). First, re
 9. Click the "Launch" button. The browser page will inform you that your request has been submitted and as you to wait for a few minutes for your allocation to be ready. When it is ready, click the "Connect to Jupyter" button.
 10. A new tab will open in your browser showing your home directory on the HPC. Double click on the "manual_smri_qc" folder - this directory contains the git repository you previously cloned in step 4. 
 11. Open the file "Image QC Tool.ipynb" with a notebook icon to its left by double clicking on the file name.
-12. Follow the instructions (link) to grade all of the images in a single batch.
+12. Follow the [instructions](https://bgdlab.github.io/research/image_qc.html) to grade all of the images in a single batch.
 13. When you finish rating the images in a batch, save and close the notebook tab. Close the tab containing the directory contents where you had opened the notebook originally. Finally, in the respublica-web.research.chop.edu tab, delete the jupyter notebook even if you have time remaining. 
 
 Note: you can adjust the time requested for the Jupyter notebook if you are going to grade multiple batches in one sitting. Each batch is designed to take 30 minutes to grade. Close the notebook on the server when you're done.
