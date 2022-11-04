@@ -19,13 +19,33 @@ After you have a CHOP Research profile, username, and VPN access, e-mail Nina an
 
 **Default Option**: Create a ticket within the Arcus Help Center
 
+To make sure your request is addressed in a timely manner, please submit a ticket via the Arcus Help Center. Include the date you would like the request to be addressed by (give the Arcus team at least 48 hours) and, if relevant, the name of the person on the Arcus team you would like to work on the ticket. (Our main contact is Scott Haag.)
+
 [Direct link to Arcus Support](https://support.arcus.chop.edu/servicedesk/customer/portal/6/create/291)
 
 1. In your browser, go to [https://arcus.chop.edu](https://arcus.chop.edu).
 2. Log in with your eResearch credentials. 
-3. The home page for Arcus will have a list of your under the main menu options. 
+3. The home page for Arcus will have a list of your labs under the main menu options. 
 
-![arcus_ticket_01.png](arcus_ticket_01.png)
+![Arcus login page](arcus_ticket_01.png)
+
+4. Click the "Support" dropdown menu
+
+![Support dropdown menu highlighted using a red box](arcus_ticket_02.png)
+
+and select the "Help Center" submenu.
+
+![Select the help center submenu](arcus_ticket_03.png)
+
+5. You will be taken to the Arcus Help Center webpage. To submit a ticket, select the "Arcus General Support" menu. To check the status of a previously submitted ticket, click on the "Requests" button in the top right hand corner of the screen.
+
+![Select the Arcus General Support menu](arcus_ticket_04.png)
+
+This page contains a list of different categories of support tickets. Common requests include
+
+- Data refresh: Data -> ADR -> Request Refresh
+- Add a new user to a lab
+
 
 **If all else fails**
 
