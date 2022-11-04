@@ -10,7 +10,7 @@ After you have a CHOP Research profile, username, and VPN access, e-mail Nina an
 
 ## 2. Double check CITI training
 
-1. Login into https://arcus.chop.edu. 
+1. Login into [Arcus](https://arcus.chop.edu). 
 2. Click on your name in the upper right corner and choose "Access Status". 
 3. Verify that there is a green check indicating that your CITI training completion is on file and that the training is active and has not expired. If the page indicates your CITI training is not on file or has expired, please log into your account on [https://citiprogram.org](https://citiprogram.org) and affiliate your account containing the appropriate course completion for your level of identifier access (see [Arucs CITI Training Requirement documentation](https://forum.arcus.chop.edu/t/citi-training-requirement-for-arcus/174)) with CHOP (see [How to Affiliate Yourself With CHOP at CITI](https://forum.arcus.chop.edu/t/how-to-affiliate-yourself-with-chop-at-citiprogram-org/270)).
 4. Once your CITI training is active in the system, verify that you also have a green check indicating you have signed the latest version of the Arcus Terms of Use and if not, please read and sign the latest version.
@@ -25,7 +25,7 @@ After you have a CHOP Research profile, username, and VPN access, e-mail Nina an
 2. Log in with your eResearch credentials. 
 3. The home page for Arcus will have a list of your under the main menu options. 
 
-![arcus_ticket_01.png]
+![arcus_ticket_01.png](arcus_ticket_01.png)
 
 **If all else fails**
 
