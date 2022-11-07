@@ -8,8 +8,9 @@ If you do not (or do not know if you) have an eResearch account:
 
 1. Contact Nina Laney to get your eResearch account set up. Let her know that you need access to the lab fileshare. 
 2. Do the required CITI training and make sure your CITI training account is affiliated with CHOP. Make sure you have done all of the trainings required by CHOP.
+3. Set up 2 factor authentication according to the instructions Nina will send you (if she doesn't, ask for it).
 
-If you are CHOP personnel and are up to date on your accounts: 
+If you already have an eResearch account: 
 
 1. Email Nina to let her know you are requesting Respublica accounts and ask her to approve access for you when she gets the chance. CC Aaron or Jenna if needed.
 2. Log in to [CIRRUS](https://www.research.chop.edu/applications/cirrus). 
