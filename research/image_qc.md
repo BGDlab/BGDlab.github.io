@@ -11,6 +11,7 @@ Details:
 - All 9 slices for a single scan are contained in the same batch.
 - All images in a batch MUST be graded in the same sitting.
 - Every grader will grade every batch, but the batch order and the order in which the images are displayed are both randomized.
+- All of the grades will be averaged to get a final QC score.
 
 ## Grading criteria 
 
