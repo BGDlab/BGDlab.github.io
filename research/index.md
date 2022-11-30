@@ -2,6 +2,6 @@
 
 ## Annotation/Grading Guidelines
 
-- [Annotating Reports](report_annotating.md)
-- [Annotating Reports - Arcus](report_annotating_arcus.md)
-- [Image QC](image_qc.md)
+- [Annotating Psych Reports - Arcus](psych_report_annotating_arcus.md)
+- [Manual Image QC](manual_image_qc.md)
+- [Radiology Report Grading](radiology_report_grading.md)
