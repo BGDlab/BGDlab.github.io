@@ -2,7 +2,7 @@ Annotation Guidelines - Arcus
 
 Overall Purpose
 
-
+Annotate signed practitioner notes on Arcus as part of the psychosis project.
 
 * Modify the terms that do not directly indicate the patient has the symptoms of interest
 * Adding a modifier is possibly excluding that term from Harshini’s analysis
