@@ -58,15 +58,20 @@ Get your eResearch account set up first (see [Respublica](clusters/respublica.md
 - Clone the code
 - Connect to Respublica in the browser
 - Start an interactive Jupyter notebook session
-- A new tab will open in your browser showing your home directory on Respublica. Click on the directory named "repo", then double click the file "filename.ipynb" to open the notebook.
-- The notebook will look like this...
-- It is composed of cells. Gray cells are called code cells. Code cells can be executed by clicking the "play" button, selecting Run Cell from the Cell menu, or using the keyboard shortcut Shift Enter.
-- This notebook is set up with ...
-- Edit this parameter in the first cell
-- Run these cells
-- The first cell does XYZ
-- The second cell prints the next report. Use the Guidelines above to determine which category this report falls into. Type your rating in the text box and hit enter
-- When you have finished the batch, a message will appear at the bottom of the notebook. If it's "error message", stop rating and contact Jenna
+- A new tab will open in your browser showing your home directory on Respublica. Click on the directory named "repo", then double click the file "Image QC Tool.ipynb" to open the notebook.
+- The notebook will look like this
+
+![](jupyter_notebook_01.png)
+
+- It is composed of 5 cells. Gray cells are called code cells. Code cells can be executed by clicking the "play" button, selecting Run Cell from the Cell menu, or using the keyboard shortcut Shift Enter. Markdown cells (of which there is one) have a white background and are displayed as formatted text.
+- In the first cell, modify the variable `raterName` to be the name you want included in any papers on this data set (i.e., `raterName = "Jamie Doe"`).
+- Run the first code cell to set the variable in the notebook.
+- The second code cell loads the necessary libraries and imports functions from a .py file in the same directory as the .ipynb. It then loads the file containing your rating grades and iterates through the current batch to grade. 
+- In each iteration, three slices of one view of one image are displayed along with an empty text box. Use the guidelines above to determine your grade for this image, type it in the text box, and press Enter.
+- When you have finished the batch, run the third code cell. A message will appear at the bottom of the notebook. 
+  - Good: A message stating "You have finished grading XXX image views (XXX/9 scans)..."
+  - Bad: A message stating " Something is wrong: not all of your grades were saved. Please stop rating and contact Jenna." This message means at least one grade in your rater grade file was not a number. There shouldn't be a way for you to enter a non-numeric character, so something has gone wrong on the back end.
+  - In need of debugging: "If this is the last line printed in black and it's followed by a bunch of red error text, please stop rating and send a screenshot of the full error to Jenna." Please take a screenshot of the error and send it to Jenna, something is wrong and detailed context is needed.
 
 
 *Troubleshooting*
