@@ -31,9 +31,11 @@ Note: you will need to use Control Shift C to copy from and Control Shift V to p
 # Getting a .CSV File onto Respublica - SECTION UNDER DEVELOPMENT
 
 This bit has only been tested on one computer that was owned by CHOP and therefore did not have to connect to the virtual Desktop first.
-1. When your eResearch account has Respublica access, go to [https://beyond.chop.edu](https://beyond.chop.edu) and connect to VM Horizon in the browser. You will need to log in using your CHOP credentials.
-2. Open RES-RHEL-HPC. It will initially load as a black screen, wait until the background with a large dark 8 and a "Red Hat Enterprise" logo appear. This is the virtual machine you have just connected to. At the top left corner of the VM, there is a menu titled "Activities". Click "Activities" to pop out a dock on the left side of the window and click the terminal.
-3. In the terminal, type `ls` to see the contents of your home directory. The directory `tsclient` connects from the virtual machine to your computer. Type `ls tsclient/`...
+1. When your eResearch account has Respublica access: 
+     - If you're on a CHOP-owned computer, go to [https://beyond.chop.edu](https://beyond.chop.edu) and connect to VM Horizon in the browser. You will need to log in using your CHOP credentials. Open RES-RHEL-HPC. 
+     - If you're on a non-CHOP computer, connect to the VM Horizon desktop. If you don't have it on your computer already, go to [https://beyond.chop.edu](https://beyond.chop.edu) to download. Once you've downloaded, enter the server address: `https://beyond.chop.edu`. You should get a pop-up asking permission to access local files - accept this. 
+2. You've now connected to the virtual machine. It will initially load as a black screen, wait until the background with a large dark 8 and a "Red Hat Enterprise" logo appear. At the top left corner of the VM, there is a menu titled "Activities". Click "Activities" to pop out a dock on the left side of the window and click the terminal.
+3. In the terminal, type `ls` to see the contents of your home directory. The directory `tsclient` connects from the virtual machine to your computer. Type `ls tsclient/local/path/to/file` to confirm the file is there, then transfer with `then rsync -avz ~/tsclient/my/desired/path/to/file /desired/respublica/location`
 
 # Using Respublica to Run Code
 
