@@ -15,9 +15,11 @@ After you have a CHOP Research profile, username, and VPN access, e-mail Nina an
 3. Verify that there is a green check indicating that your CITI training completion is on file and that the training is active and has not expired. If the page indicates your CITI training is not on file or has expired, please log into your account on [https://citiprogram.org](https://citiprogram.org) and affiliate your account containing the appropriate course completion for your level of identifier access (see [Arucs CITI Training Requirement documentation](https://forum.arcus.chop.edu/t/citi-training-requirement-for-arcus/174)) with CHOP (see [How to Affiliate Yourself With CHOP at CITI](https://forum.arcus.chop.edu/t/how-to-affiliate-yourself-with-chop-at-citiprogram-org/270)).
 4. Once your CITI training is active in the system, verify that you also have a green check indicating you have signed the latest version of the Arcus Terms of Use and if not, please read and sign the latest version.
  
-## 3. For additional support:
+## 3. For support:
 
 **Default Option**: Create a ticket within the Arcus Help Center
+
+The ticket system is how Arcus stays organized enough to be able to support all of the various labs and projects that they do. Submitting a ticket is much easier on them than responding to emails.
 
 To make sure your request is addressed in a timely manner, please submit a ticket via the Arcus Help Center. Include the date you would like the request to be addressed by (give the Arcus team at least 48 hours) and, if relevant, the name of the person on the Arcus team you would like to work on the ticket. (Our main contact is Scott Haag.)
 
@@ -43,6 +45,7 @@ and select the "Help Center" submenu.
 
 This page contains a list of different categories of support tickets. Common requests include
 
+- Anything related to technical difficulties that you would email Scott about
 - Data refresh: Data -> ADR -> Request Refresh
 - Add a new user to a lab
 
