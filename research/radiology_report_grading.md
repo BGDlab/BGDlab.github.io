@@ -1,19 +1,22 @@
-CLIP Radiology Report Annotating Guidelines and Process
+SLIP Radiology Report Annotating Guidelines and Process
 
 Overall Purpose
 
-- Create separate datasets for Jenna’s study by sorting notes into three categories
-    - Not CLIP (0) - images with significant issues that have to be excluded
-    - Maybe CLIP (1) - images that would likely need to be excluded from a typical research study but where quantitative analyses such as Freesurer could still be interesting, potentially require a closer look depending on the specific research context
-    - CLIP (2) - what could arguably be included in a research study on brain morphometry
+- Create separate datasets for the SLIP study by sorting notes into three categories
+    - Not SLIP (0) - images with significant issues that have to be excluded
+    - Maybe SLIP (1) - images that would likely need to be excluded from a typical research study but where quantitative analyses such as Freesurer could still be interesting, potentially require a closer look depending on the specific research context
+    - SLIP (2) - what could arguably be included in a research study on brain morphometry
 
 Directions
 
-1. Open Terminal app
-2. Run code:
-        cd ~/Desktop/CLIP
-        jupyter notebook
-3. Run the two gray boxes on Jupyter
+1. Request access to Arcus Lab 605 and access it from [arcus.chop.edu](arcus.chop.edu). 
+2. When access has been granted, turn the lab "ON" and open the Terminal application.
+3. Manually type the following command and hit enter: `rsync -avz /mnt/arcus/lab/shared/annotation-helper-tool .`.
+4. Type `ls` and hit enter. You should see a list of directories, one of which will be `annotation-helper-tool`.
+5. Now use the menu bar (icon with three horizontal lines located in the top left corner of the webpage) to switch from Terminal to Jupyter.
+6. In the Jupyter interface, there is a column on the left side of the page indicating the current directory. Double click on the `annotation-helper-tool` to enter the directory. Double click the file `Arcus_Radiology_Report_Grading.ipynb` file to open it in the Jupyter file editor.
+7. Follow the instructions in the notebook.
+
 
 FYI
 - Read the histories and findings in each note
@@ -23,7 +26,7 @@ FYI
 
 Key Words for Ratings (0, 1, or 2)
 
-- 0: Not CLIP
+- 0: Not 
     - History of aneurysm
     - Hemorrhage or possible hemorrhage
     - Orthodontic hardware degrades the image (ex: results in significant signal dropout and geometric distortion)
@@ -33,7 +36,7 @@ Key Words for Ratings (0, 1, or 2)
     - Most -omas, -otomy, and -ectomy (ex: craniectomy, craniotomy, glioblastoma, glioma, astrocytoma, neurofibromatosis)
     - Shunt
     - Surgery (ex: postop, post surg, surgical cavity, surgical site, resection)
-- 1: Maybe CLIP 
+- 1: Maybe SLIP 
     - Mildly enlarged
     - Motion (ex: motion artifact, motion degradation)
     - Cerebellar ectopia
@@ -68,7 +71,7 @@ Key Words for Ratings (0, 1, or 2)
     - Macro or microcephaly
     - Prominent pituitary gland with a convex superior border
     - Glioma
-- 2: Okay for CLIP (these terms are irrelevant to CLIP or do not affect it significantly)
+- 2: Okay for SLIP (these terms are irrelevant to SLIP or do not affect it significantly)
     - Mucosal thickening
     - Mucous retention cyst
     - Enlarged tonsils
