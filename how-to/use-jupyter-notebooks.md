@@ -2,6 +2,21 @@
 
 A Jupyter notebook is composed of different types of cells and their outputs. It is a front-end interface to a back-end kernel. This wiki page is intended to give a brief overview of how to use a notebook.
 
+**Basic terminology**
+
+- Cell: a chunk of code or text
+- Kernel: a local server running the environment in which the code will be executed. It contains any libraries needed.
+- Running a cell: execute the code (on the backend, this uses the kernel) or render the text according to Markdown format
+- Markdown: a lightweight markup language for creating formatted text. Not the main focus of a notebook, but notebooks allow you to add chunks of Markdown formatted text to communicate with the user.
+
+**Workflow**
+
+1. Every time you open or reopen a Jupyter notebook (even on Arcus), you are starting with a clean slate. You will need to run any cells containing `import` calls or setting up variables used throughout the notebook. (In the Radiology Report Grading context, you must always run Step 0.)
+
+2. Run a cell or group of cells. When a code cell is running or queued to run, the square brackets in front of it contain an asterisk. 
+
+3. Once a code cell has been run, the asterisk in the square brackets in front of it transforms into a number. This number reports the order in which the cells are run. This number does not appear for Markdown cells because those cells render the formatted text rather than running code. 
+
 ## Running a cell
 
 When you open a new Jupyter notebook (or a notebook where the outputs have been cleared), each code cell will have a pair of empty square brackets in front of it.
@@ -20,7 +35,6 @@ Running a cell executes the code (or renders the Markdown) in the cell. There a 
 
 **Option 3**: keyboard controls. With your desired cell selected, press the key combination Shift + Enter.
 
-When a code cell is running or queued to run, the square brackets in front of it contain an asterisk. Once a code cell has been run, the square brackets in front of it contain a number. This number reports the order in which the cells are run. This number does not appear for Markdown cells because those cells render the formatted text rather than running code. 
 
 ## Stopping a running cell
 
@@ -45,17 +59,17 @@ Each of the two following options will halt the current cell, likely producing a
 
 ## Understanding error messages
 
-### `Error: Keyboard Interrupt`
+### Error: Keyboard Interrupt
 
 ![](jupyter-notebook/06_error_keyboard_int.png)
 
-**Cause**: a running cell was stopped.
+**Cause**: a running cell was stopped. This error is no cause for alarm, the notebook is telling you that it stopped a running cell.
 
 **Solution**: rerun the cell.
 
 
 
-### `Error: waiting for input`
+### Error: waiting for input
 
 Sometimes shows up as one of the following
 - The notebook won't let me enter anything
@@ -72,7 +86,7 @@ Sometimes shows up as one of the following
 **Solution**: stop the cell using one of the methods discussed in the previou section and rerun the cell.
 
 
-### `Error:`"I entered a number during the SLIP radiology report grading and something weird happened"
+### Error: "I entered a number during the SLIP radiology report grading and something weird happened"
 
 **Possible Cause**: the user input text box was not selected when the number was entered - a common issue when switching between windows or browser tabs
 
