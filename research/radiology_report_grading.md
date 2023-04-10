@@ -13,7 +13,6 @@ For each report,
     - Rating 2: No reason to suspect imaging pathology. These are people whose imaging pathology would likely not exclude them from being part of a control cohort in research brain MRI study. Note that this is different from their PAST MEDICAL HISTORY potentially excluding them, which is a different issue.
 
 
-
 ## Directions
 
 1. Request access to Arcus Lab 605 and access it from [arcus.chop.edu](arcus.chop.edu). 
