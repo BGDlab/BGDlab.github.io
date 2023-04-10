@@ -20,9 +20,25 @@ Option 2: the menu bar. With your desired cell selected, click the "Run" menu an
 
 Option 3: keyboard controls. With your desired cell selected, press the key combination Shift + Enter.
 
-Note: once a code cell has been run, the square brackets in front of it contain a number. This number reports the order in which the cells are run. This number does not appear for Markdown cells because those cells render the formatted text rather than running code. 
+When a code cell is running or queued to run, the square brackets in front of it contain an asterisk. Once a code cell has been run, the square brackets in front of it contain a number. This number reports the order in which the cells are run. This number does not appear for Markdown cells because those cells render the formatted text rather than running code. 
 
 ### Stopping a running cell
+
+There are several scenarios when you may want to stop a running cell:
+- The cell contains a loop that's running longer than you want it to (infinite loops are a good example)
+- You need to close the notebook in the middle of the cell running
+- You ran the cell by mistake
+- The cell is waiting for user input but the input box is not visible
+
+Each of the two following options will halt the current cell, likely producing an error, but the state of the kernel is not cleared. You will need to rerun cells containing any variables modified during the now stopped cell to reset the state of those variables.
+
+Option 1: the "stop" button. With your desired cell selected, click the button with a square in it located in the toolbar at the top of the interface.
+
+![](jupyter-notebook/04_stop_cell_button.png)
+
+Option 2: the menu bar. With your desired cell selected, click the "Kernel" menu and then click the "Interrupt Kernel" option.
+
+![](jupyter-notebook/05_stop_cell_menu.png)
 
 
 
