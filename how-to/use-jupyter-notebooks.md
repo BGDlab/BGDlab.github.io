@@ -42,4 +42,43 @@ Option 2: the menu bar. With your desired cell selected, click the "Kernel" menu
 
 
 
-### Understanding errors
+
+### Understanding error messages
+
+`Error: Keyboard Interrupt`
+
+![](jupyter-notebook/06_error_keyboard_int.png)
+
+**Cause**: a running cell was stopped.
+
+**Solution**: rerun the cell.
+
+
+
+`Error: waiting for input`
+Sometimes shows up as one of the following
+- The notebook won't let me enter anything
+- I keep hitting enter on a cell that asks for user input and nothing is happening
+- I tried running a cell and it's stuck with an asterisk in the square brackets in front of it
+
+
+![](jupyter-notebook/07_error_user_input.png)
+
+**Possible Causes**: 
+- The cell was run, its type was changed, and the user tried to run the cell again without cancelling the previous run
+- Arcus automatically activates labs for 8 hours, that time has passed, and the user left off in the middle of a cell with a loop
+
+**Solution**: stop the cell using one of the methods discussed in the previou section and rerun the cell.
+
+
+`Error:`"I entered a number during the SLIP radiology report grading and something weird happened"
+
+**Possible Cause**: the user input text box was not selected when the number was entered - a common issue when switching between windows or browser tabs
+
+**Solution**:
+1. Stop the cell
+2. Change the type of the cell from Markdown to Code
+3. If there are any `#` in front of the first line of the cell, remove them
+4. Run the cell
+
+
