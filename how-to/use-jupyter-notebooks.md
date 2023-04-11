@@ -98,4 +98,12 @@ Sometimes shows up as one of the following
 ![Remove the leading pound sign/hashtag/octothorp on the first line](jupyter-notebook/09_error_cell_type_comment.png)
 4. Run the cell
 
+### Error: Arcus is telling me the notebook can't connect to the kernel
 
+**Possible Cause 1**: Arcus wants you to log in again
+
+**Solution 1**: Keep the notebook tab open and log in via a new tab at [arcus.chop.edu](arcus.chop.edu). Then switch back to the notebook tab and dismiss the warning message. The notebook *should* allow you to resume exactly where you left off.
+
+**Possible Cause 2**: The run time for that instance of the lab has expired.
+
+**Solution 2**: Make sure you are logged in to Arcus and restart the lab. You will need to rerun Step 0 before resuming your report grading.
