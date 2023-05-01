@@ -1,4 +1,4 @@
-# How to use a Jupyter notebook
+*How to use a Jupyter notebook*
 
 A Jupyter notebook is composed of different types of cells and their outputs. It is a front-end interface to a back-end kernel. This wiki page is intended to give a brief overview of how to use a notebook.
 

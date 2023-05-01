@@ -1,4 +1,4 @@
-# GAMMs
+*GAMMs*
 
 Definitions
 - GAMM: generalized additive mixed model 
