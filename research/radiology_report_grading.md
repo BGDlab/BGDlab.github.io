@@ -23,4 +23,13 @@ For each report,
 6. In the Jupyter interface, there is a column on the left side of the page indicating the current directory. Double click on the `annotation-helper-tool` to enter the directory. Double click the file **`Welcome_To_SLIP_Radiology_Report_Grading.ipynb`** file to open it in the Jupyter file editor.
 7. Follow the instructions in the **`Welcome_To_SLIP_Radiology_Report_Grading.ipynb`** notebook and use the linked document as a guideline for grading the reports. When you have finished the **`Welcome_To_SLIP_Radiology_Report_Grading.ipynb`** notebook, switch to the **`Arcus_Radiology_Report_Grading.ipynb`** notebook to grade new reports.
 
+## Refreshing your copy of the code
+
+As the process evolves, the code for grading the reports will be updated on Arcus. When you are asked to get an updated version of the code for yourself, follow these steps:
+
+1. Log in to [arcus.chop.edu](arcus.chop.edu) and open lab 605. 
+2. Turn the lab ON and open the Terminal application.
+3. Type the following command and hit enter to remove the existing code (not data, just code): `rm -rf annotation-helper-tools`
+4. Then type the following command and hit enter to copy the report grading code to your home directory: `cp -r /mnt/arcus/lab/shared/annotation-helper-tools .`.
+5. When you open the Jupyter notebook interface, you will need to modify the `name` variable.
 
