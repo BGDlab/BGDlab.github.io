@@ -33,3 +33,19 @@ As the process evolves, the code for grading the reports will be updated on Arcu
 4. Then type the following command and hit enter to copy the report grading code to your home directory: `cp -r /mnt/arcus/lab/shared/annotation-helper-tools .`.
 5. When you open the Jupyter notebook interface, you will need to modify the `name` variable.
 
+## Examining the reliability ratings
+
+Make sure you have pulled or refreshed your code (previous 2 sections) after 12 pm Thursday June 22, 2023.
+
+1. Log in to [arcus.chop.edu](arcus.chop.edu). 
+2. Navigate to "Applications" -> "My Labs" and open lab 605.
+3. Turn the lab ON and open the Jupyter notebook application.
+4. In the Jupyter interface, there is a column on the left side of the page indicating the current directory. Double click on the `annotation-helper-tool` to enter the directory. Double click the file **`Radiology_Report_Grading_status.ipynb`** file to open it in the Jupyter file editor.
+5. Follow the instructions at the top of the file.
+
+If you would like to view the reliability report comparisons for grader pairs other than the ones listed, follow the instructions to add graders to Cells 04-07. If the desired grader's name is not printed in the output of Cell 03, then they have not done the reliability ratings yet.
+
+
+## Help
+
+For help, reach out to Jenna via Slack. 
