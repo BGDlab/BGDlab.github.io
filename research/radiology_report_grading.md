@@ -29,9 +29,11 @@ As the process evolves, the code for grading the reports will be updated on Arcu
 
 1. Log in to [arcus.chop.edu](arcus.chop.edu) and open lab 605. 
 2. Turn the lab ON and open the Terminal application.
-3. Type the following command and hit enter to remove the existing code (not data, just code): `rm -rf annotation-helper-tools`
-4. Then type the following command and hit enter to copy the report grading code to your home directory: `cp -r /mnt/arcus/lab/shared/annotation-helper-tools .`.
-5. When you open the Jupyter notebook interface, you will need to modify the `name` variable.
+3. Type the following commands and hit Enter to remove the existing code (not data, just code): `cd ~` (followed by Enter) and `rm -rf annotation-helper-tools`
+4. Then type the following command and hit enter to copy the report grading code to your home directory: `cp -r ~/arcus/shared/annotation-helper-tools .`.
+5. When you open the Jupyter notebook interface, you will need to modify the `name` variable and the `project` variable.
+
+Note: if you perform this refresh after you have been working in an earlier version of the code in Jupyter, you will need to restart the kernel (Kernel -> Restart Kernel).
 
 ## Examining the reliability ratings
 
