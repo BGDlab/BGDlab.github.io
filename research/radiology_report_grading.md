@@ -17,7 +17,7 @@ For each report,
 
 1. Request access to Arcus Lab 605 and access it from [arcus.chop.edu](arcus.chop.edu). 
 2. When access has been granted, turn the lab "ON" and open the Terminal application.
-3. Manually type the following command and hit enter to copy the report grading code to your home directory: `cp -r /mnt/arcus/lab/shared/annotation-helper-tools .`. Copying this code to your home directory makes your copy of it easy to find and work with.
+3. Manually type the following command and hit enter to copy the report grading code to your home directory: `cp -r ~/arcus/shared/annotation-helper-tools .`. Copying this code to your home directory makes your copy of it easy to find and work with.
 4. Type `ls` and hit enter. You should see a list of directories, one of which will be `annotation-helper-tool`.
 5. Now use the menu bar (icon with three horizontal lines located in the top left corner of the webpage) to switch from Terminal to Jupyter.
 6. In the Jupyter interface, there is a column on the left side of the page indicating the current directory. Double click on the `annotation-helper-tool` to enter the directory. Double click the file **`Welcome_To_SLIP_Radiology_Report_Grading.ipynb`** file to open it in the Jupyter file editor.
