@@ -17,6 +17,11 @@ If you already have an eResearch account:
 3. Submit a Respublica Access Request for yourself.
 4. Submit a Fileshare Access Request to be added to the BGD Lab Respublica Fileshare (/mnt/isilon/bgdlab_resnas03). 
 
+# UNDER DEVELOPMENT: Accessing Respublica (from a non-CHOP computer)
+1. In your browser, open the page [connect.chop.edu](connect.chop.edu).
+2. Click on the icon for Desktop to open a virtual machine (VM) on the CHOP intranet. 
+3. Once the VM opens to a Windows desktop, open a browser on the Windows desktop and navigate to [beyond.chop.edu](beyond.chop.edu). 
+
 # Getting Code onto Respublica
 
 1. Make sure your Github repository is up to date with the code you are currently using.
