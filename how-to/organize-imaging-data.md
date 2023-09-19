@@ -54,4 +54,33 @@ LBCC
 
 ## Examining a new data set
 
+Before doing anything to a data set, we need to understand what data it contains and how it is currently structured. Every data set will be different in this regard (with the exception of most SLIP data).
+
+The `tree` and `ls` commands are helpful for viewing the structure of a data set's directories. After determining the number of directory levels and the meaning of each level (subject, session, modality, derivatives, etc.), it is then important to view any available images for several subjects using FSLEyes (on Respublica run `module load fsl` before running `fsleyes` on the command line). Visual inspection of the images is important to confirm the presence of high-resolution isotropic structural scans, which are needed for many neuroimage processing pipelines.
+
+At this stage, data sets can be assigned one of the following statuses:
+- 1 Inspected Fail: the directory structures have been inspected and NO high-resolution isotropic structural scan was consistently identified between subjects
+- 2 Inspected Pass: the directory structures have been inspected and high-resolution isotropic structural scans were found
+
+Data sets with the second of these statuses then can be organized according to BIDs/BIDs-like structure.
+
+*SLIP*: We have worked out a directory structure convention with Arcus. Every SLIP data set (and any clinical data set we get through Arcus) as of 2023-09 will have the same top 3 levels:
+
+```
+2023-09-01_slip_request
+|-- HM100001_73456768156586_486
+|   |-- GCPDicom_...
+|   |   |-- 156.5746.018465.048645...
+|   |   |   |-- ...
+|-- HM185DJK_64769582851461_784
+|   |-- GCPDicom_...
+|   |   |-- 156.5746.018465.048645...
+|   |   |   |-- ...
+|-- HM185DJK_30456718645759_1247
+|   |-- GCPDicom_...
+|   |   |-- 156.5746.018465.048645...
+|   |   |   |-- ...
+```
+
+where the `HM185DJK_30456718645759_1247` string consists of the anonymized subject identifier, the procedure order identifier, and the patient's age in days **post birth**. The first level down contains a dump of anonymized files associated with that set of information. For more details on how to organize SLIP and similar clinical data, see [the corresponding Github repo](https://github.com/BGDlab/dataorg-arcus).
 
