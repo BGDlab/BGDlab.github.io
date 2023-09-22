@@ -25,20 +25,23 @@ This section is written by (and mostly for) NGG students, but will hopefully be 
 
 *BGS Funding*
 
-As a BGS student, you can get $1k per fiscal year (July-June) for conferences you're presenting at. This **must be approved ~1 month prior to the start of the conference**! More info - including the form you'll need to fill out - is available on the [BGS website](https://www.med.upenn.edu/bgs/student-funding.html) under Travel Funds. The page also lists some other funding sources you may be able to utilize.
+As a BGS student, you can get $1k per fiscal year (July-June) for conferences you're presenting at. This **must be approved ~1 month prior to the start of the conference**! As of now, it's unclear whether BGS will pay to cover travel expensed through CHOP or if the trip must be expensed through Penn. Stay tuned for updates as we try to figure all this out. More info - including the form you'll need to fill out - is available on the [BGS website](https://www.med.upenn.edu/bgs/student-funding.html) under Travel Funds. The page also lists some other funding sources you may be able to utilize.
 
 *Other Student Funding*
 
 Also keep an eye out for emails soliciting applications for the Jameson Hurvich Award, which are usually sent out by the NGG admin every 6 months. This award is pretty low-burden to apply to and provides $750 in travel funding for students "presenting work related to behavioral neuroscience".
 
 #### Concur
-[Concur](https://cms.business-services.upenn.edu/penntravel/expense-report.html) is the website that Penn uses to process reimbursements. These notes draw heavily from the info on the [PennLINC website](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/) (including a *VERY* helpful video walk-through by Lia!).
+[Concur](https://cms.business-services.upenn.edu/penntravel/expense-report.html) is the website that Penn uses to process reimbursements. These notes draw heavily from the info on the [PennLINC website](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/) (including a *VERY* helpful video walk-through by Lia!). The basic workflow is:
+
+1. Create an expense for the conference in Concur, adding each itemized expense (flights, hotels, etc). 
+  - *Per Diem*: Concur has a set amount of per diem (calculated based on the location of the conference) that you'll be paid to cover meals. They pay a slightly reduced per diem for 2 travel days (to and from the conference) as well. This is handy, because you don't need to keep receipts! Just note any meals that you didn't pay for (e.g. lunch from the conference, lab dinner) and they'll deduct a percentage from your reimbursement.
+2. Use the calculations from Concur to prep an Expenditure Justification form. This form is what it sounds like - a way to justify the expenses you're submitting. A blank version can be found [here](https://www.med.upenn.edu/ggeb/assets/user-content/Financial%20Forms/penn-a21-form.pdf), though it's recommended to work off of previously-approved versions (ask in the PennLINC slack #concur channel). Once you've filled out everything *except* the PI signature, email this form to John (hyon1@pennmedicine.upenn.edu)/the finance team (10Admin-Fin@PennMedicine.upenn.edu) for them to look it over.
+3. Once your Expenditure Justification is approved, have Aaron sign it and add it as a pdf receipt in Concur (select the expense, go to `Manage Receipts` > `Manage Attachments` > `Add`).
+4. Submit! 
 
 *Booking with Concur*
 
 It's possible to book your flights directly through Concur, so you don't have to carry any debt on your credit card. Please see the [PennLINC site](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/#booking-flights-via-concur) for instructions.
 
-*Per Diem*
-
-Concur has a set amount of per diem (calculated based on the location of the conference) that you'll be paid to cover meals. They pay a slightly reduced per diem for 2 travel days (to and from the conference) as well. This is handy, because you don't need to keep receipts! Just note any meals that you didn't pay for (e.g. lunch from the conference, lab dinner) and they'll deduct a percentage from your reimbursement.
 
