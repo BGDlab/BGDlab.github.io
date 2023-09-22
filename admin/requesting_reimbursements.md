@@ -7,6 +7,7 @@ CHOP and Penn each have different platforms for reimbursing work expenses, like 
 Preparation: The expense report process will be much easier if you collect all your receipts and credit card statements before you get started.  I believe that for conferences, they won’t reimburse you until after the date of the conference. You have to upload the receipt, proof you were there (like a program booklet or name badge or something), and then proof you paid it. You can take a screenshot of your bank statement, blur out any account info except last 4 digits, and show the amount and date match what’s on the receipt.) Note, you can start populating the report before the conference with any and all receipts, then submit it after the conference
 
 1. Sign in to your OneDrive application on your local computer and sync all of your documentation to an easy to find location. (I put mine in "Admin/Reimbursements/(YYYY-MM conference)").
+  - Note: If you're using a non-CHOP device, you can do all this by going to Firefox and [opening a virtual desktop](https://connect.chop.edu). If you're going this route, it's also often easiest just to email all your receipts to yourself. 
 2. Go to connect.chop.edu and open a Desktop. 
 3. In the Desktop, make sure your documentation is synced and available, then open Microsoft Edge and navigate to at.chop.edu. In the menu on the left side of the page, click the "Workday" link.
 4. In Workday under the Quick Tasks menu on the right, select "View All Apps" and then select "Expenses" (icon of a hand holding dollar bills)
