@@ -1,4 +1,5 @@
 *Conference reimbursement process*
+
 CHOP and Penn each have different platforms for reimbursing work expenses, like conferences and workshops. While most people will just use the CHOP system, Penn students may want/need to interact with both systems.
 
 ### CHOP
@@ -23,17 +24,21 @@ Preparation: The expense report process will be much easier if you collect all y
 This section is written by (and mostly for) NGG students, but will hopefully be helpful for any other Penn students/employees in the lab.
 
 *BGS Funding*
+
 As a BGS student, you can get $1k per fiscal year (July-June) for conferences you're presenting at. This **must be approved ~1 month prior to the start of the conference**! More info - including the form you'll need to fill out - is available on the [BGS website](https://www.med.upenn.edu/bgs/student-funding.html) under Travel Funds. The page also lists some other funding sources you may be able to utilize.
 
 *Other Student Funding*
+
 Also keep an eye out for emails soliciting applications for the Jameson Hurvich Award, which are usually sent out by the NGG admin every 6 months. This award is pretty low-burden to apply to and provides $750 in travel funding for students "presenting work related to behavioral neuroscience".
 
 #### Concur
-Concur is the website that Penn uses to process reimbursements. These notes draw heavily from the info on the [PennLINC website](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/) (including a *VERY* helpful video walk-through by Lia!).
+[Concur](https://cms.business-services.upenn.edu/penntravel/expense-report.html) is the website that Penn uses to process reimbursements. These notes draw heavily from the info on the [PennLINC website](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/) (including a *VERY* helpful video walk-through by Lia!).
 
 *Booking with Concur*
+
 It's possible to book your flights directly through Concur, so you don't have to carry any debt on your credit card. Please see the [PennLINC site](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/#booking-flights-via-concur) for instructions.
 
 *Per Diem*
+
 Concur has a set amount of per diem (calculated based on the location of the conference) that you'll be paid to cover meals. They pay a slightly reduced per diem for 2 travel days (to and from the conference) as well. This is handy, because you don't need to keep receipts! Just note any meals that you didn't pay for (e.g. lunch from the conference, lab dinner) and they'll deduct a percentage from your reimbursement.
 
