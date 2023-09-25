@@ -30,7 +30,7 @@ As a BGS student, you can get $1k per fiscal year (July-June) for conferences yo
 
 *Other Student Funding*
 
-Also keep an eye out for emails soliciting applications for the Jameson Hurvich Award, which are usually sent out by the NGG admin every 6 months. This award is pretty low-burden to apply to and provides $750 in travel funding for students "presenting work related to behavioral neuroscience".
+Also keep an eye out for emails soliciting applications for the Jameson Hurvich Award, which are usually sent out by the NGG admin every 6 months. This award is pretty low-burden to apply to and provides $750 in travel funding for students "presenting work related to behavioral neuroscience". If you get the award, there are slightly different instructions for reimbursing expenses (there's a Business Connection form instead of the Expenditure Justification form)
 
 #### Concur
 [Concur](https://cms.business-services.upenn.edu/penntravel/expense-report.html) is the website that Penn uses to process reimbursements. These notes draw heavily from the info on the [PennLINC website](https://pennlinc.github.io/docs/LabHome/CONCUR_Reimbursement/) (including a *VERY* helpful video walk-through by Lia!). The basic workflow is:
