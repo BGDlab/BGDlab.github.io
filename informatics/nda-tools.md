@@ -4,7 +4,7 @@
 
 ### Install:
 
-*Step 01*:  Set up the `conda` environment
+**Step 01**:  Set up the `conda` environment
 
 - `conda create -n nda-tools`
 - `conda activate nda-tools`
@@ -17,20 +17,20 @@
 - `pip install keyring` (installed from https://pypi.org/project/keyring/)
 - (**Respublica ONLY**) `pip install keyrings.alt` (there is an issue on Respublica where the regular keyring package doesn't work)
 
-*Step 02*: Check that the `keyring` works
+**Step 02**: Check that the `keyring` works
 
 - `python`
 - `import keyring`
-- (**Respublica ONLY**) `import keyrings.alt`
+- (*Respublica ONLY*) `import keyrings.alt`
 - `keyring.set_password("thisisasillytest", 'iam', 'groot')`  
     - This is where errors often happen on Respublica. Those errors likely have to do with the keyring automatically setting a password for the keyring:
     - In the terminal, run the command `rm ~/.local/share/keyring/*`
-    - Then run `python`, `import keyring`, (**Respublica ONLY**) `import keyrings.alt`,  and `keyring.set_password("thisisasillytest", "iam", "groot")`
+    - Then run `python`, `import keyring`, (*Respublica ONLY*) `import keyrings.alt`,  and `keyring.set_password("thisisasillytest", "iam", "groot")`
     - The system (at least on Respublica) will prompt you to create a new password for the keyring
 - `keyring.get_password("thisisasillytest", 'iam')` will return `'groot'`
 - `exit()`
 
-*Step 03*: Set up the `keyring`
+**Step 03**: Set up the `keyring`
 
 - Make sure you know your NDA username and password (https://nda.nih.gov/nda/creating-an-nda-account.html). You may need to reset your password from your NDA account page.
 - Checking the source name:
@@ -39,16 +39,16 @@
     - I traced the relevant file back to `./miniconda3/envs/ndatools/lib/python3.9/site-packages/NDATools/Configuration.py`. SERVICE_NAME is defined on line 58 as `'nda-tools'`
 - `python`
 - `import keyring`
-- (**Respublica ONLY**) `import keyrings.alt`
+- (*Respublica ONLY*) `import keyrings.alt`
 - `keyring.set_password("nda-tools", "NDAR_USERNAME", "pass")`
 - `keyring.get_password("nda-tools", "NDAR_USERNAME")`
 
-*Step 04*: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
+**Step 04**: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
 
 - (Full instructions not included)
 - Data Packages you create will be stored in a table under Dashboard > Data Package for a number of weeks.
 
-*Step 05*: Download the data package
+**Step 05**: Download the data package
 
 - For the data package you wish to download, copy the ID number in the first column. Make sure there is enough space in the destination to store the downloaded files.
 - On Respublica, run the following script with your arguments via bash (or submit to slurm by replacing the `bash` command with `sbatch`): `bash /mnt/isilon/bgdlab_resnas03/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
