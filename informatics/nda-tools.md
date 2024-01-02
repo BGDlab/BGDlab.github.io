@@ -4,7 +4,7 @@
 
 ### Install:
 
-1. Set up the `conda` environment
+*Step 01*:  Set up the `conda` environment
 
 - `conda create -n nda-tools`
 - `conda activate nda-tools`
@@ -14,19 +14,23 @@
     - So far, have confirmed this error occurs with Python `3.12` but not Python `3.9.14`. 
     - Change your Python version using `conda install python=3.9` then rerun the previous command to install numpy
 - `pip install nda-tools`
+- `pip install keyring` (installed from https://pypi.org/project/keyring/)
+- (**Respublica ONLY**) `pip install keyrings.alt` (there is an issue on Respublica where the regular keyring package doesn't work)
 
-2. Check that the `keyring` works
+*Step 02*: Check that the `keyring` works
 
 - `python`
-- `import keyring`: if you get an import error here, exit python and run `pip install keyring` to install keyring from https://pypi.org/project/keyring/.
-- `keyring.set_password("thisisasillytest", 'iam', 'groot')`  -- This is where errors happen on Respublica. Those errors likely have to do with the keyring automatically setting a password for the keyring:
+- `import keyring`
+- (**Respublica ONLY**) `import keyrings.alt`
+- `keyring.set_password("thisisasillytest", 'iam', 'groot')`  
+    - This is where errors often happen on Respublica. Those errors likely have to do with the keyring automatically setting a password for the keyring:
     - In the terminal, run the command `rm ~/.local/share/keyring/*`
-    - Then run `python`, `import keyring`, and `keyring.set_password("thisisasillytest", "iam", "groot")`
+    - Then run `python`, `import keyring`, (**Respublica ONLY**) `import keyrings.alt`,  and `keyring.set_password("thisisasillytest", "iam", "groot")`
     - The system (at least on Respublica) will prompt you to create a new password for the keyring
 - `keyring.get_password("thisisasillytest", 'iam')` will return `'groot'`
 - `exit()`
 
-3. Set up the `keyring`
+*Step 03*: Set up the `keyring`
 
 - Make sure you know your NDA username and password (https://nda.nih.gov/nda/creating-an-nda-account.html). You may need to reset your password from your NDA account page.
 - Checking the source name:
@@ -35,18 +39,19 @@
     - I traced the relevant file back to `./miniconda3/envs/ndatools/lib/python3.9/site-packages/NDATools/Configuration.py`. SERVICE_NAME is defined on line 58 as `'nda-tools'`
 - `python`
 - `import keyring`
+- (**Respublica ONLY**) `import keyrings.alt`
 - `keyring.set_password("nda-tools", "NDAR_USERNAME", "pass")`
 - `keyring.get_password("nda-tools", "NDAR_USERNAME")`
 
-4. Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
+*Step 04*: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
 
 - (Full instructions not included)
 - Data Packages you create will be stored in a table under Dashboard > Data Package for a number of weeks.
 
-5. Download the data package
+*Step 05*: Download the data package
 
 - For the data package you wish to download, copy the ID number in the first column. Make sure there is enough space in the destination to store the downloaded files.
-- On Respublica, run the following script with your arguments via bash (NOT slurm): `bash /mnt/isilon/bgdlab_resnas03/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
+- On Respublica, run the following script with your arguments via bash (or submit to slurm by replacing the `bash` command with `sbatch`): `bash /mnt/isilon/bgdlab_resnas03/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
     - `12345678` is the desired Data Package's ID
     - `ndarUsername` is your NDA username
     - `/path/to/destination/` is the full path to the location where you want to store the data download
@@ -70,7 +75,16 @@ TARGETDIR=$3 # destination of downloaded data
 source ${HOME}/miniconda3/etc/profile.d/conda.sh
 conda activate nda-tools
 
+# Initial download
 downloadcmd -dp $PACKID -u $USRNAME -d $TARGETDIR -wt 32
+
+# Verify the download
+downloadcmd -dp $PACKID -u $USRNAME -d $TARGETDIR --verify
+
+# Download any files that were missed the first time
+VERIFYDIR=~/NDA/nda-tools/downloadcmd/packages/$PACKID
+downloadcmd -dp $PACKID -u $USRNAME -d $TARGETDIR -wt 32 -t $VERIFYDIR/downlaod-verification-retry-s3-links.csvj
+
 ```
 
 
