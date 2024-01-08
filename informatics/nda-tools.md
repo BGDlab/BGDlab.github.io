@@ -25,7 +25,9 @@
 - `keyring.set_password("thisisasillytest", 'iam', 'groot')`  
     - This is where errors often happen on Respublica. Those errors likely have to do with the keyring automatically setting a password for the keyring:
     - In the terminal, run the command `rm ~/.local/share/keyring/*`
-    - Then run `python`, `import keyring`, (*Respublica ONLY*) `import keyrings.alt`,  and `keyring.set_password("thisisasillytest", "iam", "groot")`
+    - Then run `python`, `import keyring`, (*Respublica ONLY*) `import keyrings.alt`
+    - Change the backend: `keyring.core.set_keyring(keyring.core.load_keyring('keyrings.alt.file.PlaintextKeyring'))` *(Note: this backend is not recommended for production use - it's not a secure way to store usernames/passwords - but it's what was recommended by Respublica)*
+    - Now try setting the password again: `keyring.set_password("thisisasillytest", "iam", "groot")`
     - The system (at least on Respublica) will prompt you to create a new password for the keyring
 - `keyring.get_password("thisisasillytest", 'iam')` will return `'groot'`
 - `exit()`
