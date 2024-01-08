@@ -47,8 +47,12 @@
 
 **Step 04**: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
 
-- (Full instructions not included)
-- Data Packages you create will be stored in a table under Dashboard > Data Package for a number of weeks.
+- Log in to the website and navigate to the collection page for the study.
+- Click "Add to Cart". The page will often take a moment to process the request. When the cart (upper right hand corner) has been updated with the request, it will say something like "1 filter: 1,050 subjects" and have 3 options listed. Click the "Create Data Package/Add Data to Study" option
+- The data packaging page will allow you to select/deselect the measures you would like to include in the data download. When the measures you're interested in are selected, click the "Create Data Package" button.
+- In the popup window, specify a name for your data package. For neuroimaging studies, make sure the checkbox next to "Include associated data files" is included. Check your selected options, then click "Create Data Package".
+- The site will take you to the Data Packages page of your user profile. This page contains a table describing all of the data packages you have created. Packages are stored for approximately 2 months before being removed.
+- To access this page in the future, all you need to do is log in to NDAR, click your username in the upper right hand corner of the page to view your profile, and navigate to the Data Packages page.
 
 **Step 05**: Download the data package
 
