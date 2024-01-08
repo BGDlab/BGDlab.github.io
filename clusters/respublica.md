@@ -65,3 +65,8 @@ Note: you will need to use Control Shift C to copy from and Control Shift V to p
     - This subdir has a file called `synthsegJobSubmitter.sh` that iterates over a rawdata BIDS directory (command line argument) and submits a new job for each T1w.nii.gz file contained in the subject/session/anat directories.
     - This script calls `jobSynthSeg.sh`, which contains the sbatch arguments etc. and commands to actually run the SynthSeg+ job.
     - To run SynthSeg+ on a BIDs directory, `bash /mnt/isilon/bgdlab_resnas03/code/synthseg/synthsegJobSubmitter.sh /mnt/isilon/bgdlab_resnas03/Data/datasetname/rawdata`
+
+
+# References
+
+[Respublica Official Wiki](https://wiki.chop.edu/login.action?os_destination=%2Fpages%2Fviewpage.action%3FspaceKey%3DRISUD%26title%3DGetting%2BAccess&permissionViolation=true)
