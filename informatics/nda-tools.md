@@ -4,7 +4,16 @@
 
 ### Install:
 
-**Step 01**:  Set up the `conda` environment
+**Step 01**: Set up your NDAR password
+
+Online, NDAR shifted from using NDAR accounts to using Login.gov identities. You will need to set up an NDAR account in order to use `nda-tools`. Your NDAR account is separate from your Login.gov identity.
+- Log in to NDAR. You can use the Login.gov identity.
+- The website will automatically load your profile page when you login.
+- In the upper right corner of the profile page, click the button "Reset Password". You will be sent a link via the email on file to reset your NDA account password.
+- Reset the password and save it in your password manager. You will reuse this password in **Step 04**.
+
+
+**Step 02**:  Set up the `conda` environment
 
 - `conda create -n nda-tools`
 - `conda activate nda-tools`
@@ -17,7 +26,7 @@
 - `pip install keyring` (installed from https://pypi.org/project/keyring/)
 - (**Respublica ONLY**) `pip install keyrings.alt` (there is an issue on Respublica where the regular keyring package doesn't work)
 
-**Step 02**: Check that the `keyring` works
+**Step 03**: Check that the `keyring` works
 
 - `python`
 - `import keyring`
@@ -32,7 +41,7 @@
 - `keyring.get_password("thisisasillytest", 'iam')` will return `'groot'`
 - `exit()`
 
-**Step 03**: Set up the `keyring`
+**Step 04**: Add your NDA username and password to the `keyring`
 
 - Make sure you know your NDA username and password (https://nda.nih.gov/nda/creating-an-nda-account.html). You may need to reset your password from your NDA account page.
 - Checking the source name:
@@ -45,7 +54,8 @@
 - `keyring.set_password("nda-tools", "NDAR_USERNAME", "pass")`
 - `keyring.get_password("nda-tools", "NDAR_USERNAME")`
 
-**Step 04**: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
+
+**Step 05**: Prep a data package on [https://nda.nih.gov](https://nda.nih.gov)
 
 - Log in to the website and navigate to the collection page for the study.
 - Click "Add to Cart". The page will often take a moment to process the request. When the cart (upper right hand corner) has been updated with the request, it will say something like "1 filter: 1,050 subjects" and have 3 options listed. Click the "Create Data Package/Add Data to Study" option
@@ -54,7 +64,8 @@
 - The site will take you to the Data Packages page of your user profile. This page contains a table describing all of the data packages you have created. Packages are stored for approximately 2 months before being removed.
 - To access this page in the future, all you need to do is log in to NDAR, click your username in the upper right hand corner of the page to view your profile, and navigate to the Data Packages page.
 
-**Step 05**: Download the data package
+
+**Step 06**: Download the data package
 
 - For the data package you wish to download, copy the ID number in the first column. Make sure there is enough space in the destination to store the downloaded files.
 - On Respublica, run the following script with your arguments via bash (or submit to slurm by replacing the `bash` command with `sbatch`): `bash /mnt/isilon/bgdlab_resnas03/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
@@ -97,4 +108,4 @@ downloadcmd -dp $PACKID -u $USRNAME -d $TARGETDIR -wt 32 -t $VERIFYDIR/downlaod-
 ### References:
 
 
-Last updated 2024-01-02 jmschabdach
+Last updated 2024-01-09 jmschabdach
