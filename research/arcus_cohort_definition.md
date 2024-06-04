@@ -12,14 +12,14 @@ For this reason, reports containing the following words in their descriptions ar
 
 ## Cohort List
 
-SLIP Neonates
+**SLIP Neonates**
 - Age at scan: <= 1 month
 - Exclusion diagnoses: standard
 - Additionaly criteria:
     - Reports are added to the grading queue with those who have gestational age present in the EHR first
     - Reports are added to the grading queue in order of the scan date
 
-SLIP Toddlers
+**SLIP Toddlers**
 - Age at scan: 1 month < age <= 2 years 
 - Exclusion diagnoses: standard
 - Additionaly criteria:
@@ -27,7 +27,7 @@ SLIP Toddlers
     - Reports are added to the grading queue in order of the scan date
 
 
-SLIP PreK
+**SLIP PreK**
 - Age at scan: 2 years < age <= 5 years
 - Exclusion diagnoses: standard
 - Additionaly criteria:
@@ -35,7 +35,7 @@ SLIP PreK
     - Reports are added to the grading queue in order of the scan date
 
 
-SLIP Elementary 
+**SLIP Elementary**
 - Age at scan: 5 years < age < 12 years
 - Exclusion diagnoses: standard
 - Additionaly criteria:
@@ -43,14 +43,14 @@ SLIP Elementary
     - Reports are added to the grading queue in order of the scan date
 
 
-SLIP Adolescents
+**SLIP Adolescents**
 - Age at scan: 12 years <= age <= 20 years
 - Exclusion diagnoses: standard
 - Additionaly criteria:
     - Reports are added to the grading queue in order of the scan date
 
 
-Clinical Imaging Genetics
+**Clinical Imaging Genetics**
 - Age at scan: any
 - Exclusion diagnoses: none 
 - Additional criteria: genetic information available upon further request
