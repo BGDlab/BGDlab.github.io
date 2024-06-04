@@ -15,14 +15,14 @@ For this reason, reports containing the following words in their descriptions ar
 **SLIP Neonates**
 - Age at scan: <= 1 month
 - Exclusion diagnoses: standard
-- Additionaly criteria:
+- Additional criteria:
     - Reports are added to the grading queue with those who have gestational age present in the EHR first
     - Reports are added to the grading queue in order of the scan date
 
 **SLIP Toddlers**
 - Age at scan: 1 month < age <= 2 years 
 - Exclusion diagnoses: standard
-- Additionaly criteria:
+- Additional criteria:
     - Reports are added to the grading queue with those who have gestational age present in the EHR first
     - Reports are added to the grading queue in order of the scan date
 
@@ -30,7 +30,7 @@ For this reason, reports containing the following words in their descriptions ar
 **SLIP PreK**
 - Age at scan: 2 years < age <= 5 years
 - Exclusion diagnoses: standard
-- Additionaly criteria:
+- Additional criteria:
     - Reports are added to the grading queue with those who have gestational age present in the EHR first
     - Reports are added to the grading queue in order of the scan date
 
@@ -38,7 +38,7 @@ For this reason, reports containing the following words in their descriptions ar
 **SLIP Elementary**
 - Age at scan: 5 years < age < 12 years
 - Exclusion diagnoses: standard
-- Additionaly criteria:
+- Additional criteria:
     - Reports are added to the grading queue with those who have gestational age present in the EHR first
     - Reports are added to the grading queue in order of the scan date
 
@@ -46,7 +46,7 @@ For this reason, reports containing the following words in their descriptions ar
 **SLIP Adolescents**
 - Age at scan: 12 years <= age <= 20 years
 - Exclusion diagnoses: standard
-- Additionaly criteria:
+- Additional criteria:
     - Reports are added to the grading queue in order of the scan date
 
 
