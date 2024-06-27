@@ -66,6 +66,8 @@ Note: you will need to use Control Shift C to copy from and Control Shift V to p
     - This script calls `jobSynthSeg.sh`, which contains the sbatch arguments etc. and commands to actually run the SynthSeg+ job.
     - To run SynthSeg+ on a BIDs directory, `bash /mnt/isilon/bgdlab_resnas03/code/synthseg/synthsegJobSubmitter.sh /mnt/isilon/bgdlab_resnas03/Data/datasetname/rawdata`
 
+On many clusters, a job is allocated a temporary space called `$SCRATCH`. The path for the scratch space can be found by putting `echo $SCRATCH` as one of the first commands in an `sbatch` script. Respublica (as of 2024-06-27) does not automatically allocate a scratch space for each job. Each user is assigned a space at `/scr1/users/<user>` that can be used as needed, though no bash variable is set up for it.
+
 
 # References
 
