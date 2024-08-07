@@ -1,5 +1,7 @@
 # Data Team
 
+- [Lifespan Brain Chart Data](lbcc_info.md)
+
 ## Useful Pages
 
 - [Git](git.md)
