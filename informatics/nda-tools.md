@@ -68,7 +68,7 @@ Online, NDAR shifted from using NDAR accounts to using Login.gov identities. You
 **Step 06**: Download the data package
 
 - For the data package you wish to download, copy the ID number in the first column. Make sure there is enough space in the destination to store the downloaded files.
-- On Respublica, run the following script with your arguments via bash (or submit to slurm by replacing the `bash` command with `sbatch`): `bash /mnt/isilon/bgdlab_resnas03/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
+- On Respublica, run the following script with your arguments via bash (or submit to slurm by replacing the `bash` command with `sbatch`): `bash /mnt/isilon/bgdlab_processing/Data/LBCC/template_code/ndaDownloadSubmit.sh 12345678 ndarUsername /path/to/destination/` where
     - `12345678` is the desired Data Package's ID
     - `ndarUsername` is your NDA username
     - `/path/to/destination/` is the full path to the location where you want to store the data download

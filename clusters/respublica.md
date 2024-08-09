@@ -15,7 +15,7 @@ If you already have an eResearch account:
 1. Email Nina to let her know you are requesting Respublica accounts and ask her to approve access for you when she gets the chance. CC Aaron or Jenna if needed.
 2. Log in to [CIRRUS](https://www.research.chop.edu/applications/cirrus). 
 3. Submit a Respublica Access Request for yourself.
-4. Submit a Fileshare Access Request to be added to the BGD Lab Respublica Fileshare (/mnt/isilon/bgdlab_resnas03). 
+4. Submit a Fileshare Access Request to be added to the BGD Lab Respublica Fileshare (/mnt/isilon/bgdlab_processing). 
 
 # UNDER DEVELOPMENT: Accessing Respublica (from a non-CHOP computer)
 1. In your browser, open the page [connect.chop.edu](connect.chop.edu).
@@ -59,12 +59,12 @@ Note: you will need to use Control Shift C to copy from and Control Shift V to p
 
 # Using Respublica to Run Code via `sbatch` Jobs
 
-- All job code lives in `/mnt/isilon/bgdlab_resnas03/code` under a subdirectory named after the processing pipeline.
+- All job code lives in `/mnt/isilon/bgdlab_processing/code` under a subdirectory named after the processing pipeline.
 - Example: SynthSeg+
     - In the code directory, there’s a `synthseg` subdirectory. 
     - This subdir has a file called `synthsegJobSubmitter.sh` that iterates over a rawdata BIDS directory (command line argument) and submits a new job for each T1w.nii.gz file contained in the subject/session/anat directories.
     - This script calls `jobSynthSeg.sh`, which contains the sbatch arguments etc. and commands to actually run the SynthSeg+ job.
-    - To run SynthSeg+ on a BIDs directory, `bash /mnt/isilon/bgdlab_resnas03/code/synthseg/synthsegJobSubmitter.sh /mnt/isilon/bgdlab_resnas03/Data/datasetname/rawdata`
+    - To run SynthSeg+ on a BIDs directory, `bash /mnt/isilon/bgdlab_processing/code/synthseg/synthsegJobSubmitter.sh /mnt/isilon/bgdlab_processing/Data/datasetname/rawdata`
 
 On many clusters, a job is allocated a temporary space called `$SCRATCH`. The path for the scratch space can be found by putting `echo $SCRATCH` as one of the first commands in an `sbatch` script. Respublica (as of 2024-06-27) does not automatically allocate a scratch space for each job. Each user is assigned a space at `/scr1/users/<user>` that can be used as needed, though no bash variable is set up for it.
 

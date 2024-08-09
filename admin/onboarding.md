@@ -44,7 +44,7 @@ The [Brain-Gene-Development Lab](www.bgdlab.org) is part of both Penn and CHOP, 
     > * Penn email account
     > 
     > And related to CHOP (Nina only):
-    > * An eResearch account so that I can access Respublica and the BGD Lab fileshare (`bgdlab_resnas03`)
+    > * An eResearch account so that I can access Respublica and the BGD Lab fileshare (`bgdlab_processing`)
     > * CHOP email account
     > * VPN and Virtual Desktop and Access
     > 
