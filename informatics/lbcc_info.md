@@ -35,7 +35,7 @@ Now that you've named your data release, update the .csv filename to reflect the
 Congratulations! You can now drop your data .csv in `/mnt/isilon/bgdlab_processing/Data/LBCC_releases` and move on with your life.
 
 ## Sharing Data
-The LBCC data is governed by a lot of different agreements. If a collaborator whats a big, global dataset's worth of derived phenotypes, the *easiest and safest* thing to do is to share one of the .csvs listed in `/mnt/isilon/bgdlab_processing/Data/LBCC_releases/sharable`. These are data from all controls in open-access/public studies in the original LBCC dataset (with the exception of UKB data). However, it's always a good idea to double-check with someone (e.g. Aaron, Jakob or Richard) before sharing these or other datasets.
+The LBCC data is governed by a lot of different agreements. If a collaborator whats a big, global dataset's worth of derived phenotypes, the *easiest and safest* thing to do is to share one of the .csvs on the `BGDLabShare` Box drive under `lifespan_derived_phenos/sharable/`. These are data from all controls in open-access/public studies in the original LBCC dataset (with the exception of UKB data). However, it's always a good idea to double-check with someone (e.g. Aaron, Jakob or Richard) before sharing these or other datasets.
 
 ## Useful Links
 + [LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800): Overview of all the currently-available, processed datasets.
