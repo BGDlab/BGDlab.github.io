@@ -50,7 +50,9 @@ LBCC
 |   |   |-- ...
 ```
 
-*LBCC*: Each data set is also given an entry in the LBCC Dataset Status file. The individual who downloaded the data set is responsible for adding the information about the data set and its participants to the Dataset Overview page. The primary info is automatically populated in the Respublica Processing Status page. The downloader must also add a link to the source webpage, the date of the download, and their name as the downloader.
+**LBCC**: *PROCESS UNDER REVIEW* Each data set is also given an entry in the LBCC Dataset Status file. The individual who downloaded the data set is responsible for adding the information about the data set and its participants to the Dataset Overview page. The primary info is automatically populated in the Respublica Processing Status page. The downloader must also add a link to the source webpage, the date of the download, and their name as the downloader.
+
+**NDAR Downloads**: For instructions on how to download data directly from the NDAR to Respublica, refer [here](https://bgdlab.github.io/informatics/nda-tools.html). 
 
 ## Examining a new data set
 
