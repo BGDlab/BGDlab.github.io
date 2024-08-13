@@ -37,6 +37,9 @@ Congratulations! You can now drop your data .csv in `/mnt/isilon/bgdlab_processi
 ## Sharing Data
 The LBCC data is governed by a lot of different agreements. **Always check with Aaron/Jakob/Richard before sharing any data**, both to make sure the data can be shared and for us to keep an overview of who is working on what. If a collaborator whats a big, global dataset's worth of derived phenotypes, the *easiest and safest* thing to do is to share one of the .csvs on the `BGDLabShare` Box drive under `lifespan_derived_phenos/sharable/`. These are data from all controls in open-access/public studies in the original LBCC dataset (with the exception of UKB data). Any further data sharing will have to be explicitly discussed to make sure data sharing agreements are in place.
 
+## BONUS: IRB Approval/Exemption
+The original brain charts project was deemed exempt by the CHOP IRB. When starting a new project, you should consider/ask about whether this project is also covered by this exemption or if it requires review. The same is also true for data use agreements! When in doubt, ask.
+
 ## Useful Links
 + [LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800): Overview of all the currently-available, processed datasets.
 + [Bethlehem, Seidlitz, White et al, 2022](https://www.nature.com/articles/s41586-022-04554-y): The original brain charts paper introducing the LBCC. Has lots of good info about the datasets across various supplementary attachments.
