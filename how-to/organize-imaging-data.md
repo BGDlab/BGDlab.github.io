@@ -86,7 +86,7 @@ cp /mnt/isilon/bgdlab_processing/Data/LBCC/template_not_git/ndaDownloadSubmit.sh
 cd $path/to/dataset/code
 bash ndaDownloadSubmit.sh $package_id $ndarUsername $path/to/dataset/data_dump
 ```
-If this is your first time downloading with *ndatools* it may ask for your Respublica keyring (should have set that up when doing the environment setup) and/or your password to your NDA account. This password is **not** the password you use to login to NDA through login.gov, it is the password set on the NDA account itself (can change the password by going to your account and navigating to your profile page). 
+If this is your first time downloading with **ndatools** it may ask for your Respublica keyring (should have set that up when doing the environment setup) and/or your password to your NDA account. This password is **not** the password you use to login to NDA through login.gov, it is the password set on the NDA account itself (can change the password by going to your account and navigating to your profile page). 
 
 #### From OpenNeuro
 Once a dataset has been identified:

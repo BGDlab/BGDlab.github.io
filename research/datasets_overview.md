@@ -9,9 +9,9 @@
 * [Directory Structure](#directory-structure-1)
 * [Documentation](#documentation-1)
 
-## LBCC
+# LBCC
 
-### Directory Structure 
+## Directory Structure 
 Within a dataset, at the final stable/post-processing stage, the structure should be
 ```
 LBCC
@@ -25,26 +25,26 @@ LBCC
         -- derivatives
         -- README
 ```
-#### Subdirectories
+### Subdirectories
 
-###### code
+#### code
 Any code used to download or organize this data set belongs in the code folder. 
 
-###### datadump
+#### datadump
 All files downloaded from a dataset
 
-###### rawdata
+#### rawdata
 Not always present, used for when file conversion is necessary when the contents of a data dump are compressed file archives, dicoms, or some other file type that requires conversion to nifti
 
-###### BIDS
+#### BIDS
 BIDSifed data and participants file + dictionary
 
-###### derivatives
+#### derivatives
 Output of pre-processing (Synthseg) any post-processing pipelines
 
 
-### Documentation
-#### Respublica
+## Documentation
+### Respublica
 In the `README` file in the dataset directory on Respublica, the downloader must include:
 * Information on the download (source, download date, who downloaded the data)
 * Data inspection (tier, inspection date)
@@ -55,7 +55,7 @@ In the `README` file in the dataset directory on Respublica, the downloader must
 The template `README` can be found here: `/mnt/isilon/bgdlab_processing/LBCC/template_not_git/README_dataset.md`
 
 
-###### Example
+#### Example
 For example, the README.md for the hypothetical `Miniature Spork` data set would read as follows:
 
 ---
@@ -86,10 +86,10 @@ A table summarizing the data present is kept in the `BIDS` directory along with 
 * `participants.tsv`
 * `participants.json`
 
-#### Google Docs
+### Google Docs
 In the [Lifespan](https://docs.google.com/spreadsheets/d/19KL7GbJLEuYkUS3hhQt7FdqGN9VwupKftvc8Ku1Mcgw/edit?gid=1454534495#gid=1454534495) spreadsheet, each dataset is given its own entry with summary demograhics and other relevant information **after** dataset has been peer reviewed. The individual who downloaded the data set is responsible for adding the information. 
 
-#### ClickUp
+### ClickUp
 This [list](https://app.clickup.com/9011141602/v/li/901102982820) tracks the status of LBCC datasets:
 * **Requested**: Dataset requested and added to queue
 * **Download**: Requested data downloaded from source onto Respublica
@@ -101,8 +101,11 @@ This [list](https://app.clickup.com/9011141602/v/li/901102982820) tracks the sta
 
 Additionally, data tier, assignee, and requestor are tracked in the list. 
 
+###### Example entry
+Dataset of Tier A that is completely curated and has been processed
+![](lbcc_status_tracker.png)
 
-## CHOP Imaging Datasets
+# CHOP Imaging Datasets
 There are currently 3 main sources of data from CHOP:
 1. SLIP - scans requested from radiology with limited imaging pathology 
 2. Clinical Imaging Genetics - ?? 
@@ -110,10 +113,10 @@ There are currently 3 main sources of data from CHOP:
 
 SLIP data is contained in the `SLIP` directory. Clinical imaging genetics data is contained in `misc_clinical` as `YYYY_MM_genetics_patient_imaging`. Nf1 data is contained ??? (seems to be both in `misc_clinical` and `nf1`). **Non-SLIP CHOP data follows the same conventions/strcuture except where specified**.
 
-#### Directory Structure
+## Directory Structure
 SLIP requests are delivered into the `dicoms` subdirectory with a manifest `YYYY_MM_requested_sessions_with_metadata.csv` listing all relevant metadata needed for organization. The [dataorg-arcus](https://github.com/BGDlab/dataorg-arcus) GitHup repo should be cloned here.
 
-##### Subdirectories
+### Subdirectories
 ```
 SLIP
     -- dataset
@@ -126,29 +129,11 @@ SLIP
         -- YYYY_MM_requested_sessions_with_metadata.csv
 ```
 
-###### dataorg-arcus
+#### dataorg-arcus
 Cloned **dataorg-arcus** repo used for organization of the data.  
 
-###### dicoms
+#### dicoms
 Delivered dicoms from Arcus
-
-###### sourcedata
-Sorted dicoms 
-
-###### rawdata-tmp
-Intermediary directory for *heudiconv* processing
-
-###### BIDS
-BIDSifed data, participants file + dictionary, CuBIDS output
-
-###### derivatives
-Output of Synthseg and any other post-processing pipelines
-
-###### heudiconv-fails
-Not always present, appears if there are issues with heudiconv and it fails for specific sessions. 
-
-
-#### SLIP deliveries contained in `dicoms`
 ###### W/ GCP garbage string
 ```
 SLIP
@@ -174,18 +159,38 @@ SLIP
 ```
 In the example `HM10RYBAA_394518280517_6061` string consists of the anonymized subject identifier, the procedure order identifier, and the patient's age in days post birth. The first level down contains a dump of anonymized files associated with that set of information.
 
-#### Documentation
+#### sourcedata
+Sorted dicoms 
 
-##### Respublica
+#### rawdata-tmp
+Intermediary directory for *heudiconv* processing
+
+#### BIDS
+BIDSifed data, participants file + dictionary, CuBIDS output
+
+#### derivatives
+Output of Synthseg and any other post-processing pipelines
+
+#### heudiconv-fails
+Not always present, appears if there are issues with heudiconv and it fails for specific sessions. 
+
+
+
+## Documentation
+
+### Respublica
 A table summarizing the data present is kept in the `BIDS` directory along with a dictionary: 
 * `participants.tsv`
 * `participants.json`
-##### ClickUp
+
+### ClickUp
 This [list](https://app.clickup.com/9011141602/v/li/901103378470) tracks the status of CHOP imaging datasets (SLIP, CIG, NF1):
 * **Requested**: Request initiated for data to be delivered from radiology
 * **Download**: Requested data downloaded onto Respublica
 * **Organize**: Downloaded data organized and BIDS complaint
 * **Peer Review**: Organized datais peer reviewed to ensure dataset is up to code and documentation is complete
 * **Stable**: Reviewed dataset is ready for post-processing and will not undergo changes at the `BIDS` level. 
+
+
 
 Additionally, data tier, assignee, and requestor are tracked in the list. 
