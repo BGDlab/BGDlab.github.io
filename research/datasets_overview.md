@@ -185,7 +185,7 @@ This [list](https://app.clickup.com/9011141602/v/li/901103378470) tracks the sta
 * **Requested**: Request initiated for data to be delivered from radiology
 * **Download**: Requested data downloaded onto Respublica
 * **Organize**: Downloaded data organized and BIDS complaint
-* P**eer Review**: Organized datais peer reviewed to ensure dataset is up to code and documentation is complete
+* **Peer Review**: Organized datais peer reviewed to ensure dataset is up to code and documentation is complete
 * **Stable**: Reviewed dataset is ready for post-processing and will not undergo changes at the `BIDS` level. 
 
 Additionally, data tier, assignee, and requestor are tracked in the list. 
