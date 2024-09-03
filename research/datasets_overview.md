@@ -19,10 +19,11 @@ LBCC
         -- README.md
         -- data_dump
         -- code
-            -- README.md
+            -- README
         -- BIDS
         -- rawdata
         -- derivatives
+        -- README
 ```
 #### Subdirectories
 
@@ -44,75 +45,59 @@ Output of pre-processing (Synthseg) any post-processing pipelines
 
 ### Documentation
 #### Respublica
-In the README.md file in the dataset directory on Respublica, the downloader must include:
+In the `README` file in the dataset directory on Respublica, the downloader must include:
 * Information on the download (source, download date, who downloaded the data)
 * Data inspection (tier, inspection date)
 * Notes descriptive of the contents of the data and any other important information
 * Summary demographics including diagnoses (if applicable)
 * Organization process (who organized it, organized date)
 
-The template README can be found here: `/mnt/isilon/bgdlab_processing/LBCC/template_not_git/README_dataset.md`
+The template `README` can be found here: `/mnt/isilon/bgdlab_processing/LBCC/template_not_git/README_dataset.md`
 
-Additionally, a `participants.tsv` and accompanying dictionary `participants.json` should be created to describe the subjects in the data. 
 
 ###### Example
-For example, the README.md for the hypothetical `Miniature Spork` data set would read as follows
+For example, the README.md for the hypothetical `Miniature Spork` data set would read as follows:
 
-> Dataset: Miniature Spork 
-Data Source
+---
+
+Dataset: Miniature Spork 
+**Data Source**
 Data Source: theminiaturesporkproject.org
 Downloaded: Dabriel Zimmerman
 Download Date: 08/12/2024
-Inspection
+**Inspection**
 Data Tier: Tier A
 Inspector: Dabriel Zimmerman
 Inspection Date: 8/12/2024
 Notes: Dataset downloaded for test purposes. Contains dummy imaging data. 
-Summary Demographics
+**Summary Demographics**
 N Total = 5       | Mean Age (adjusted age in days) = 9131
 N Male = 3        | Min Age (djusted age in days) = 8766
 N Female = 2      | Max Age (djusted age in days) = 9496
-Organization Process
+**Organization Process**
 Organizer: Dabriel Zimmerman
 Organization Date: 8/12/2024
 
+---
 
+A table summarizing the data present is kept in the `BIDS` directory along with a dictionary: 
+* `participants.tsv`
+* `participants.json`
 
-
-and its directory structure would be
-```
-LBCC
--- MiniatureSpork
-    -- README.md
-    -- code
-        -- download_sporks.sh
-    -- sourcedata
-        -- sub_01_T1w.nii.gz
-        -- sub_01_T1w.json
-        -- sub_02_T1w.nii.gz
-        -- sub_02_T1w.json
-        -- sub_03_T1w.nii.gz
-        -- sub_03_T1w.json
-        -- sub_04_T1w.nii.gz
-        -- sub_04_T1w.json
-        -- sub_05_T1w.nii.gz
-        -- sub_05_T1w.json
-```
 #### Google Docs
 In the [Lifespan](https://docs.google.com/spreadsheets/d/19KL7GbJLEuYkUS3hhQt7FdqGN9VwupKftvc8Ku1Mcgw/edit?gid=1454534495#gid=1454534495) spreadsheet, each dataset is given its own entry with summary demograhics and other relevant information **after** dataset has been peer reviewed. The individual who downloaded the data set is responsible for adding the information. 
 
 #### ClickUp
 This [list](https://app.clickup.com/9011141602/v/li/901102982820) tracks the status of LBCC datasets:
-* Requested: Dataset requested and added to queue
-* Download: Requested data downloaded from source onto Respublica
-* Organize: Downloaded dataset is organized and BIDS complaint
-* Peer Review: Organized dataset is peer reviewed to ensure dataset is up to code and documentation is complete
-* BABS Synthseg: Reviewed datasets are processed using BABS Synthseg and phenotypes have been extracted 
-* Supplemental Processing: Reviewed datasets have been processed with Synthseg and now are undergoind additional processing with custom pipelines (i.e. AFNI CT, eaCSF)
-* Dropped: Dataset is dropped during any point of the organizing/pre-processing process
+* **Requested**: Dataset requested and added to queue
+* **Download**: Requested data downloaded from source onto Respublica
+* **Organize**: Downloaded dataset is organized and BIDS complaint
+* **Peer Review**: Organized dataset is peer reviewed to ensure dataset is up to code and documentation is complete
+* **BABS Synthseg**: Reviewed datasets are processed using BABS Synthseg and phenotypes have been extracted 
+* **Supplemental Processing**: Reviewed datasets have been processed with Synthseg and now are undergoind additional processing with custom pipelines (i.e. AFNI CT, eaCSF)
+* **Dropped**: Dataset is dropped during any point of the organizing/pre-processing process
+
 Additionally, data tier, assignee, and requestor are tracked in the list. 
-
-
 
 
 ## CHOP Imaging Datasets
@@ -161,8 +146,8 @@ Output of Synthseg and any other post-processing pipelines
 Not always present, appears if there are issues with heudiconv and it fails for specific sessions. 
 
 
-#### SLIP data dumps
-##### W/ GCP garbage string
+#### SLIP deliveries contained in `dicoms`
+###### W/ GCP garbage string
 ```
 SLIP
     -- dataset
@@ -174,7 +159,7 @@ SLIP
                             -- *dcm
         -- YYYY_MM_requested_sessions_with_metadata.csv
 ```
-##### Example: W/O GCP garbage string
+###### W/O GCP garbage string
 ```
 SLIP
     -- dataset
@@ -185,7 +170,7 @@ SLIP
                         -- *dcm
          -- YYYY_MM_requested_sessions_with_metadata.csv
 ```
-In the example HM10RYBAA_394518280517_6061 string consists of the anonymized subject identifier, the procedure order identifier, and the patient's age in days post birth. The first level down contains a dump of anonymized files associated with that set of information.
+In the example `HM10RYBAA_394518280517_6061` string consists of the anonymized subject identifier, the procedure order identifier, and the patient's age in days post birth. The first level down contains a dump of anonymized files associated with that set of information.
 
 #### Documentation
 
@@ -195,9 +180,10 @@ A table summarizing the data present is kept in the `BIDS` directory along with 
 * `participants.json`
 ##### ClickUp
 This [list](https://app.clickup.com/9011141602/v/li/901103378470) tracks the status of CHOP imaging datasets (SLIP, CIG, NF1):
-* Requested: Request initiated for data to be delivered from radiology
-* Download: Requested data downloaded onto Respublica
-* Organize: Downloaded data organized and BIDS complaint
-* Peer Review: Organized datais peer reviewed to ensure dataset is up to code and documentation is complete
-* Stable: Reviewed dataset is ready for post-processing and will not undergo changes at the `BIDS` level. 
+* **Requested**: Request initiated for data to be delivered from radiology
+* **Download**: Requested data downloaded onto Respublica
+* **Organize**: Downloaded data organized and BIDS complaint
+* P**eer Review**: Organized datais peer reviewed to ensure dataset is up to code and documentation is complete
+* **Stable**: Reviewed dataset is ready for post-processing and will not undergo changes at the `BIDS` level. 
 
+Additionally, data tier, assignee, and requestor are tracked in the list. 
