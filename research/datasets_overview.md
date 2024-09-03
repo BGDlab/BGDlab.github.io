@@ -60,7 +60,7 @@ For example, the README.md for the hypothetical `Miniature Spork` data set would
 
 ---
 
-Dataset: Miniature Spork 
+```Dataset: Miniature Spork 
 **Data Source**
 Data Source: theminiaturesporkproject.org
 Downloaded: Dabriel Zimmerman
@@ -76,7 +76,7 @@ N Male = 3        | Min Age (djusted age in days) = 8766
 N Female = 2      | Max Age (djusted age in days) = 9496
 **Organization Process**
 Organizer: Dabriel Zimmerman
-Organization Date: 8/12/2024
+Organization Date: 8/12/2024```
 
 ---
 
