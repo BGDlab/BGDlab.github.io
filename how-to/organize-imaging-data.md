@@ -14,7 +14,7 @@
 
 ---
 
-## Contents of the Data Directory
+# Contents of the Data Directory
 
 The main data directory on our fileshare is located at `/mnt/isilon/bgdlab_processing/Data`. Within this directory are our core 4 directories:
 
@@ -33,7 +33,7 @@ An overview of both LBCC and SLIP datasets can be found here: [datasets_overview
 
 
 
-## Conventions
+# Conventions
 * No underscore characters in project directory names (helps with file path parsing further down the line)
 * Data sets from certain websites are given site prefixes: `OpenNeuro-`, `NDAR-`, etc.
 * Data sets from Arcus are named based on their request: 
@@ -48,7 +48,7 @@ An overview of both LBCC and SLIP datasets can be found here: [datasets_overview
 
 ---
 
-## Data Curation Process
+# Data Curation Process
 The general process for organizing any data for the lab is as follows:
 1. [Download](#downloading)
     * [NDAR](#ndar-source)
@@ -65,9 +65,9 @@ The general process for organizing any data for the lab is as follows:
 6. [Stable/post-processing](#stablepost-processing)
 
 ---
-### Downloading
+## Downloading
 
-#### NDAR Source
+### NDAR Source
 Downloading data from the NIMH Data Archive (NDA) to Respublica requires the use of *nda-tools*.
 1. To set up the nda-tools  environment, see [instructions](https://bgdlab.github.io/informatics/nda-tools.html)
 2. After the nda-tools  environment is set up, create the download package on NDAR with all the data you want to download:
@@ -88,7 +88,8 @@ bash ndaDownloadSubmit.sh $package_id $ndarUsername $path/to/dataset/data_dump
 ```
 If this is your first time downloading with **ndatools** it may ask for your Respublica keyring (should have set that up when doing the environment setup) and/or your password to your NDA account. This password is **not** the password you use to login to NDA through login.gov, it is the password set on the NDA account itself (can change the password by going to your account and navigating to your profile page). 
 
-#### From OpenNeuro
+
+### From OpenNeuro
 Once a dataset has been identified:
 1. Go to the "Download" tab on the datasets' dashboard. 
 2. Choose the "Download with a shell script" method to get a *.sh*  script. 
@@ -106,7 +107,7 @@ LBCC
 5. Execute the script with the destination of the data being the `data_dump`  subdirectory
 
 
-### Data Inspection
+## Data Inspection
 Before doing anything to a data set, we need to understand what data it contains and how it is currently structured. Every data set will be different in this regard (with the exception of most SLIP data).
 
 The `tree` and `ls` commands are helpful for viewing the structure of a dataset's `data_dump`. After determining the number of directory levels and the meaning of each level (subject, session, modality, derivatives, etc.), it is then important to view any available images for several subjects using FSLeyes:
@@ -116,7 +117,7 @@ fsleyes sub_01/nifti/*.nii.gz
 ```
 Visual inspection of the images is important to confirm the presence of high-resolution isotropic structural scans, which are needed for many neuroimage processing pipelines, check for any oddities in image orientation, etc. 
 
-#### Data Classifications
+### Data Classifications
 There are a few different types of imaging data we can get. The first distinction is the data source: 
 
 1. clinical data from one of the hospital systems
@@ -143,7 +144,8 @@ Datasets should be classified based on the above criteria before moving to the n
 2. If LBCC: 
     * Dataset listed in the [spreadsheet](https://docs.google.com/spreadsheets/d/19KL7GbJLEuYkUS3hhQt7FdqGN9VwupKftvc8Ku1Mcgw/edit?gid=1454534495#gid=1454534495) as "0 Abandoned" for its `Lifespan Version`
 
-### Data Organization
+
+## Data Organization
 All data has to be organized into a structure that is BIDS compliant. See [Conventions](#conventions) for more information. The remainder of this section will provide examples of directory structures for Tier A and Tier B datasets and explain how each dataset went from original download to final organized structure.
 
 
@@ -161,7 +163,7 @@ There are currently 2 main pipeline for data organization based on the source of
 * [SLIP/CIG](#chop-imaging---slipcignf1)
     * [CHANGES](#changes)
 
-#### NDAR Data - LBCC
+### NDAR Data - LBCC
 A [GitHub Repo](https://github.com/BGDlab/data-org) is maintained containing template scripts to use to organize data from NDAR. Due to uniqueness of each NDAR dataset, the templates are not a guarantee to work beyond the first step `buildBidsDir.py` script. See the repo README for instructions for running the scripts. It may be desired to use tools like *heudiconv* and *CuBIDS* for organization, but the scripts don't use any tools other than *dcm2niix*. 
 
 For all NDAR datasets, subject identifiers are generated from the **subjectkey** column containing a string beginning with NDAR found in the `image03.txt` table. Most NDAR datasets contain this exact table, but some datasets may contain an alternative file called `imagingcollection.txt`. 
@@ -172,7 +174,7 @@ Data downloaded from NDAR may be compressed into various filetypes. Data team ha
 * . tgz
 * .zip
 
-###### Example: NDAR-LBCC Dataset (Tier A)
+##### Example: NDAR-LBCC Dataset (Tier A)
 ```
 dataset
     -- BIDS
@@ -205,7 +207,7 @@ dataset
 ```
 In the example, data arrived in tarballs (compressed file archives) containing nfiti/json pairs and some dicoms. When data comes in compressed, contents are extracted to a new `rawdata` directory. If dicoms are contained in the archive, the dicoms stay in the `rawdata` and the converted niftis go into their appropriate `BIDS` directory. If nifti/json pairs in the archive, they get copied to their appropriate `BIDS` directory. There is a main dataset **README** and a **README** for the `code` directory where all scripts and commands are documented. The main dataset **README** must note how the data arrived (nifti and/or dicom). 
 
-###### Example: NDAR-LBCC Dataset (Tier B)
+##### Example: NDAR-LBCC Dataset (Tier B)
 ```
 dataset
     -- BIDS
@@ -233,12 +235,10 @@ In the example, data arrived uncompressed with just niftis, no json sidecars. In
 
 
 
-#### CHOP Imaging - SLIP/CIG/NF1
+### CHOP Imaging - SLIP/CIG/NF1
 A [GitHub Repo](https://github.com/BGDlab/dataorg-arcus) is maintained containing scripts used in organizing CHOP imaging data. This pipeline employs *heudiconv* and *CuBIDS*. 
-##### Before 
-##### After
 
-###### Example: SLIP Release post September 2024
+##### Example: SLIP Release post September 2024
 ```
 slip_YYYY_MM
     -- BIDS
@@ -280,8 +280,10 @@ slip_YYYY_MM
 
 ```
 In the example, CuBIDS processing outputs the new files: `participants.json`, `participants.tsv`,`dataset_description`,`CHANGES`, and the `code` subdirectory. See [CuBIDS](https://cubids.readthedocs.io/en/latest/about.html) for more information on CuBIDS output. 
+
+
 **Note** In new releases of SLIP, the above example will be how files are named. Previous versions of SLIP (as of 8/12/24) are in the following format. 
-###### Example: SLIP Release prior to September 2024
+##### Example: SLIP Release prior to September 2024
 ```
 slip_YYYY_MM
     -- BIDS
@@ -322,7 +324,8 @@ slip_YYYY_MM
     -- YYYY_MM_requested_sessions_with_metadata.csv
 
 ```
-###### Changes in SLIP Organization September 2024
+
+#### Changes in SLIP Organization September 2024
 Make note of the updates:
 * MPR -> MPRAGE
 * Decimal point changed to 'p':
@@ -344,10 +347,10 @@ Make note of the updates:
 * Run number 3 total digits instead of 4
 
 
-#### OpenNeuro - LBCC
+### OpenNeuro - LBCC
 In general, datasets on OpenNeuro are already BIDS compliant. However, sometimes they need some tweaking to match the format that we desire for the lab. Scripts from either repos for NDAR or Arcus data org can be used as templates/starting off points. 
 
-###### Example: OpenNeuro-LBCC Dataset (Tier A)
+##### Example: OpenNeuro-LBCC Dataset (Tier A)
 ```
 dataset
     -- BIDS
@@ -377,7 +380,7 @@ dataset
     -- README.md
 ```
 In the example, the data has already been BIDSifed. However, our conventions require `run-00X` and `ses-0X` in the filename so a script `sort.sh` was custom built to bring the data up to standard. In the main README it is noted how the data arrived (nifti/json pair).
-###### Example: OpenNeuro-LBCC Dataset (Tier C)
+##### Example: OpenNeuro-LBCC Dataset (Tier C)
 ```
 dataset
     -- derivatives
@@ -392,10 +395,10 @@ dataset
 ```
 In the example, data featured a csv consisting of derivative volume segmentation values and no raw or converted data. The table with phenotypes is be stored in a new `derivatives` directory. Even though no code was needed for organization, the `code` directory should still have a README. The main dataset README would note the tier of the data (Tier C). 
 
-### Peer Review
+## Peer Review
 The peer review process involves reviewing the dataset directory to ensure that conventions are met, documentation is updated, and that data is ready for pre-processing.
 
-#### Checklist
+### Checklist
 - [ ] *run-00X* in filename
 - [ ] *ses-0X* as subdirectory of *sub-X* and present in filename
 - [ ] README descriptive of dataset, organization process and source data content
@@ -404,10 +407,10 @@ The peer review process involves reviewing the dataset directory to ensure that 
 - [ ] Static copy of all code used in a `code` subdirectory or standard repo directory (i.e. `dataorg-arcus` or `data-org`)
 - [ ] External documentation/ClickUp tracker updated 
 
-### Pre-processing
+## Pre-processing
 Data is generally pre-processed with BABS+Synthseg. See dynamic [Data Processing](https://doc.clickup.com/9011141602/p/h/8chp6z2-9011/da15d609f547742) for most up to date instructions. 
 
-### Stable/post-processing
+## Stable/post-processing
 Datasets are moved to this status once all pre-processing has occurred. Meaning that there will be no changes to the `BIDS` directories and that Synthseg phenotypes have been extracted into the `derivatives` directory.
 
 
