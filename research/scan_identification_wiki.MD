@@ -1,8 +1,8 @@
 # Scan Identification
-[Background](#background)
-[Dictionaries](#dictionaries)
-[Sequence Dictionary](#sequences)
-[Helpful Resources](#helpful-resources)
+* [Background](#background)
+* [Dictionaries](#dictionaries)
+* [Sequence Dictionary](#sequences)
+* [Helpful Resources](#helpful-resources)
 
 ## Background
 Scans delivered from CHOP arrive in dicom format. Data is converted to nifti using [heudiconv](https://heudiconv.readthedocs.io/en/latest/) (relies on dcm2niix) where scans were identified(named) based on the `SeriesDescription` or `ProtocolName` metadata fields containing explicit mention of various sequence or scan types:
