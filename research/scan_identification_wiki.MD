@@ -132,5 +132,6 @@ The metadata fields were chosen in order to distinguish scans belonging to one g
 ## Helpful Resources
 ### Vendor Specific Guides
 #### Siemens
-* [Syngo DICOM Conformence Statement]()
+* [What is a nifti?](https://brainder.org/2012/09/23/the-nifti-file-format/)
+* [Syngo DICOM Conformence Statement](scan_identification/siemens_syngo_info.pdf)
 * [FSPGR With IR Prep](https://mriquestions.com/ir-prepped-sequences.html)
