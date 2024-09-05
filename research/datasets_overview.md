@@ -194,3 +194,12 @@ This [list](https://app.clickup.com/9011141602/v/li/901103378470) tracks the sta
 
 
 Additionally, data tier, assignee, and requestor are tracked in the list. 
+
+## References
+Last updated 2024-09-04 by dabrielz
+
+**Contributors**
+
+@jmschabdach
+
+@dabrielz

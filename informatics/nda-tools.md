@@ -1,4 +1,31 @@
-# Instructions on how to use nda-tools to download NDAR datasets onto Respublica
+# How to download from NDA
+
+## GUI: Download Manager
+Instructions on how to download data from NDA with the Download Manager.
+
+### Install
+1. Login to your NDA account, click `TOOLS` in the top bar
+2. Follow the steps to install the Download Manager
+
+### Prep a data package 
+
+- Log in to the website and navigate to the collection page for the study.
+- Click "Add to Cart". The page will often take a moment to process the request. When the cart (upper right hand corner) has been updated with the request, it will say something like "1 filter: 1,050 subjects" and have 3 options listed. Click the "Create Data Package/Add Data to Study" option
+- The data packaging page will allow you to select/deselect the measures you would like to include in the data download. When the measures you're interested in are selected, click the "Create Data Package" button.
+![](nda-create-package.png)
+- In the popup window, specify a name for your data package. For neuroimaging studies, make sure the checkbox next to "Include associated data files" is included. Check your selected options, then click "Create Data Package".
+- The site will take you to the Data Packages page of your user profile. This page contains a table describing all of the data packages you have created. Packages are stored for approximately 2 months before being removed.
+- To access this page in the future, all you need to do is log in to NDAR, click your username in the upper right hand corner of the page to view your profile, and navigate to the Data Packages page.
+
+### Download
+- Login to the Download Manager using your NDA specific username and password (not the password for the 3rd party used to login to NDA itself)
+- The package created in the previous step will show up on the left hand side under "My Data Packages"
+- Choose which files you want to download, click and your done!
+![](nda-download-manager.png)
+
+
+## CLI: nda-tools
+Instructions on how to use nda-tools to download NDAR datasets onto Respublica
 
 ### Source: [https://github.com/NDAR/nda-tools](https://github.com/NDAR/nda-tools)
 
@@ -108,4 +135,10 @@ downloadcmd -dp $PACKID -u $USRNAME -d $TARGETDIR -wt 32 -t $VERIFYDIR/downlaod-
 ### References:
 
 
-Last updated 2024-01-09 jmschabdach
+Last updated 2024-09-05 dabrielz
+
+**Contributors**
+
+@jmschabdach
+
+@dabrielz

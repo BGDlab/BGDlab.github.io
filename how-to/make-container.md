@@ -1,5 +1,5 @@
 # BABS - Making a container
-@shreyagudapati9
+
 
 One of the inputs to BABS is a containerized BIDS App. This document explains what a BIDS App is, how to create a Docker container for it on an Intel chip laptop, push the container to DockerHub, and run it on Respublica using Singularity. For basics on containers and images, see [Docker's guide](https://www.docker.com/resources/what-container/).
 
@@ -366,3 +366,12 @@ This will push the image to your DockerHub repository.
 ```powershell
 $ singularity build my_bids_app-{version_tag}.sif docker://yourdockerusername/my_bids_app:{version_tag}
 ```
+
+## References
+Last updated 2024-09-05 by dabrielz
+
+**Contributors**
+
+@shreyagudapati9
+
+@dabrielz
