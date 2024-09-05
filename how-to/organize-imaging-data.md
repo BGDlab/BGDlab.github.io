@@ -1,4 +1,7 @@
 # How to organize imaging data
+@dabriel
+@jmschabdach
+
 ##### Table of Contents  
 [Contents of the Data Directory](#contents-of-the-data-directory)
 [Conventions](#conventions)

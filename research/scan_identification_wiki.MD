@@ -1,4 +1,6 @@
 # Scan Identification
+@dabrielz
+
 * [Background](#background)
 * [Dictionaries](#dictionaries)
 * [Sequence Dictionary](#sequences)
