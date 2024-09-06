@@ -136,11 +136,11 @@ The second distinction is the tier of data:
 * Tier Unknown: Automatic tier given to an unexplored dataset 
 
 All data should come with a metadata file including the following information:
-| Mandatory | Only if Applicable |
-|------:|:------:|
-|patient/subject id|session id|
-|age at scan|diagnosis|
-|sex||
+| Mandatory        | Only if Applicable |
+|:-----------------|:-------------------|
+|patient/subject id|session id          |
+|age at scan       |diagnosis           |
+|sex               |                    |
 
 Datasets should be classified based on the above criteria before moving to the next step. Any notes about the inspection should be added in the datasets `README`. Any Tier F dataset should be removed from Respublica and 
 1. Dataset listed as Tier F with "dropped" status in the ClickUp tracker list

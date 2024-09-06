@@ -60,10 +60,10 @@ Scan groups were created based on the most common `ProtocolNames` in the data. T
 ### Parameter Review
 
 The metadata fields were chosen in order to distinguish scans belonging to one group from scans belonging to another group. Originally, many metadata fields were considered. These fields were pruned away based on how heterogenous the values were across all scans in that one group. For example, for `RepetitionTime`, did the majority of scans in that group have the same exact *TR*? If not were the majority of *TR*s a few milliseconds away from the mode (most common value) or were they 4 or 5 second away from the mode? Consider the examples below, the 2 scan groups have very homogenous `PixelBandwidth` but highly variable `RepetitionTime` as only 34% and 15% of scans in those groups have a *TR* within 5 msec of the mode. 
-| Group | RepetitionTime Mode | % of Scans|PixelBandwidth Mode| % of Scans|
-|------:|------|------|------|:------:|
-|T2_TSE_COR 384|0.099|34|205|99|
-|T2_TSE_TRA 384|0.095|15|205|99|
+| Group        | RepetitionTime Mode | % of Scans|PixelBandwidth Mode| % of Scans|
+|:-------------|:--------------------|:----------|:------------------|:----------|
+|T2_TSE_COR 384|0.099                |34         |205                |99         |
+|T2_TSE_TRA 384|0.095                |15         |205                |99         |
 
 *TR* is an essential parameter in distinguishing scan types so even though its highly heterogenous in the examples, it is retained. Other fields that were highly heterogenous were discarded. The figures below will show heterogenity in the retained parameters. In the example it is also shown that while homogenous, `PixelBandwidth` is the same between the two groups so it isn't useful for distinguishing these groups apart from each other (mainly because they are both TSE sequences). 
 
