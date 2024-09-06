@@ -8,7 +8,7 @@ So, you found a cool new dataset in a paper or a data repository and you want to
 First off, double-check whether we already have this dataset in the LBCC. All dataset/derivatives that are processed and ready to be used are listed on the [LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800). However, it's also possible that someone else is currently working on adding this data, or that it was going to be added but was abandonded due to data quality, access agreements, etc. All this will be listed on the [Clickup Tracking List](https://app.clickup.com/9011141602/v/li/901102982820).
 
 ### 2. Fetch and Organize
-All new LBCC data should be added to Respublica. We have instructions on how to add and organize new datasets [here](https://bgdlab.github.io/how-to/organize-imaging-data.html.) **IMPORTANT:** All action items (reaching out to PIs, submitting a data use agreement, downloading or processing data, etc.) should be listed and tracked in the LBCC's [Clickup Tracking List](https://app.clickup.com/9011141602/v/li/901102982820).
+All new LBCC data should be added to Respublica. We have instructions on how to add and organize new datasets [here](https://bgdlab.github.io/how-to/organize-imaging-data.html.). **IMPORTANT:** All action items (reaching out to PIs, submitting a data use agreement, downloading or processing data, etc.) should be listed and tracked in the LBCC's [Clickup Tracking List](https://app.clickup.com/9011141602/v/li/901102982820).
 
 *Under development*
 
@@ -30,7 +30,16 @@ If the existing dataset releases don't have what you need, you should first add 
 #### Naming & Documenting Your Data Release
 Now that you have your dataset compiled, you should decide if this is a major or a minor release. For example, a minor release would be adding 2-3 small studies, re-processing existing data with a new pipeline, or adding a new clinical/demographic variable. Minor releases are indexed by a decimal place after the last major release (for example, if the latest release is version 3.0, the next minor release will be version 3.1). Major releases are indexed by the first digit (so for example, a new major release after 3.1 would be 4.0). We've also been naming these after cities, so feel free to name it after the place you're from, where you were when you compiled the data, etc.
 
-Now that you've named your data release, update the .csv filename to reflect the release name. You should also make a new tab in the [LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800) with all study information, pulling from existing releases and adding new variables as necessary. If you do add a variable, be sure to define it in the `DATA DICTIONARY` tab. Finally, should also document the new release in `/mnt/isilon/bgdlab_processing/Data/LBCC_releases/README.md`, describing any changes that distinguish this release from the last one. 
+Now that you've named your data release, update the .csv filename to reflect the release name. You'll now create 3 forms of documentation to go with your data release: a **Data Dictionary** file, an entry in the **README.md** file, and a new tab in the **[LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800)**. Don't be daunted - most of this you can just get by copying the documentation for a prior release and making edits as needed. There's also an R script *(insert path here)* `/LBCC_release_documentation_template.Rmd` that you can use as a template for extracting information you need for the Data Dictionary and Data Release tab from your data release csv.
+
+##### 1. Data Dictionary
+First, you'll need to define all the variables/column names that you include in your spreadsheet. Some of them might just be raw regional measures derived from freesurfer, etc, in which case, you can just note this. However, if you transformed variables, ommitted certain diagnoses, etc, be sure to say so. Key things to note are the units you're using for age (and wheter it's age post-conception or regular old age post-birth). Since these releases concatenate across many studies, just an overall definition or explanation of an abbreviation is ok. If people need the gritty details, they can look at the primary study's source - just make sure you note any changes/variables that you combine to bridge the gap from that primary source to the data release.
+
+##### 2. LBCC Data Release Tab
+Next, you will need to make a new tab in the [LBCC Data Release Spreadsheet](https://docs.google.com/spreadsheets/d/1bWK-eXVlHD2t757heWHzW1i-mKiXpzkbqWD0T5JaNIU/edit?gid=83134800#gid=83134800) with all study information, pulling from existing releases and adding new variables as necessary. If you do add a variable, be sure to define it in the `DATA DICTIONARY` tab.
+
+##### 3. README Entry
+Finally, should also document the new release in `/mnt/isilon/bgdlab_processing/Data/LBCC_releases/README.md`, describing any changes that distinguish this release from the last one. 
 
 Congratulations! You can now drop your data .csv in `/mnt/isilon/bgdlab_processing/Data/LBCC_releases` and move on with your life.
 
