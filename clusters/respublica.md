@@ -21,6 +21,7 @@ If you already have an eResearch account:
 1. In your browser, open the page [connect.chop.edu](connect.chop.edu).
 2. Click on the icon for Desktop to open a virtual machine (VM) on the CHOP intranet. 
 3. Once the VM opens to a Windows desktop, open a browser on the Windows desktop and navigate to [beyond.chop.edu](beyond.chop.edu). 
+*NOTE: some have had luck accessing Respublica directly from [beyond.chop.edu](beyond.chop.edu), which opens up VMWare Client on their local machine*
 
 # Getting Code onto Respublica
 
