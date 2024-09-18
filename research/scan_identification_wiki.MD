@@ -113,6 +113,8 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
 ---
 
 #### Heterogenity in scan groups
+The following plots show the variability of a single parameter for each protocol group. In brief, **MPRAGE** protocols are highly similar across all parameters whereas **TSE** protocols are more variable and protocols where an acquisition type isn't mentioned (i.e. SAG T1) usually have the highest variability.
+
 ##### RepetitionTime
 ![](scan_identification/tr_t1w_3t.png)
 ![](scan_identification/tr_t1w_1p5t.png)
@@ -135,16 +137,35 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
 ![](scan_identification/flip_fl_3t.png)
 ![](scan_identification/flip_fl_1p5t.png)
 ##### PixelBandwidth
+![](scan_identification/pxb_t1w_3t.png)
+![](scan_identification/pxb_t1w_1p5t.png)
+![](scan_identification/pxb_t2w_3t.png)
+![](scan_identification/pxb_t2w_1p5t.png)
+![](scan_identification/pxb_fl_3t.png)
+![](scan_identification/pxb_fl_1p5t.png)
 ##### PercentSampling
+![](scan_identification/prs_t1w_3t.png)
+![](scan_identification/prs_t1w_1p5t.png)
+![](scan_identification/prs_t2w_3t.png)
+![](scan_identification/prs_t2w_1p5t.png)
+![](scan_identification/prs_fl_3t.png)
+![](scan_identification/prs_fl_1p5t.png)
 ##### MultibandAccelerationFactor
+![](scan_identification/mb_t1w_3t.png)
+![](scan_identification/mb_t1w_1p5t.png)
+![](scan_identification/mb_t2w_3t.png)
+![](scan_identification/mb_t2w_1p5t.png)
 
 ---
 
 ## Dictionaries
-### Saturation
-* **FS** in *acq* key/value BIDS pair
-    * T1 FS
-    * T2 FS 
+### Sample
+* BIDS pair: `sample-fetal`
+* Fetal neuro scans
+### Fat Saturation
+* **FatSat** at the end of the BIDS pair: `acq-<value>`
+    * [T1 FS](https://mrimaster.com/characterise-image-t1-fat-sat/)
+    * [T2 FS](https://mrimaster.com/characterise-image-t2-fat-sat/)
 ### Reconstruction Methods
 * BIDS pair: `rec-<value>`
 * Values:
@@ -152,10 +173,14 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
         * [reference](https://mriquestions.com/propellerblade.html)
         * Periodically Rotated Overlapping ParalleL Lines with Enhanced Reconstruction
     * NORM
+        * Intensity normalization
     * DIS2D
+        * Distortion correction in 2D
     * DIS3D
+        * Distortion correction in 3D
     * MFSPLIT
     * FIL 
+        * In-line filter
 
 ### Sequences
 * BIDS pair: `acq-<value>`
@@ -198,6 +223,8 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
     * FL3D
         * **FL3D/FLASH**: 3-dimensional fast low angle shot (Siemens)
     * MTS
+        * [Reference](https://s.mriquestions.com/mt-imagingcontrast.html)
+        * Magnetization Transfer Saturation
     * FSGPRBRAVO
     * FSPGR
     * TSE3DVFL
@@ -213,17 +240,19 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
     * FL3D
     * SPC
     * CINE
+    * DIXON
 ### Suffix
-* BIDS pair: 
 * Values:
     * structural 
         * T1w
         * T2w
         * T2starw
+            * [Reference](https://mrimaster.com/t2-star-mri/)
         * FLAIR
             * Fluid Attentuated Inversion Recovery
+            * [T1 v T2 FLAIR](https://mrimaster.com/characterise-image-flair/)
         * PDw
-            * Proton density weighted scan
+            * Proton density weighted 
     * susceptibility
         * swi
     * diffusion
@@ -231,20 +260,29 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
         * ep2d
     * other
         * unknown
+
+        
 ---
 
 ## Helpful Resources
-### Vendor Specific Guides
-#### Siemens
+
+### General
 * [What is a nifti?](https://brainder.org/2012/09/23/the-nifti-file-format/)
+* [Common Abbrevations Dictionary](https://radiopaedia.org/articles/mri-pulse-sequence-abbreviations?lang=us)
+* [What is Inversion Time](https://mrimaster.com/ti-mri/)
+* [What is SNR](https://mrimaster.com/snr/)
+* [Magnetization Transfer Contrast](scan_identification/de_boer1.pdf)
+* [Cross Vendor Terms](https://mrimaster.com/mri-acronyms/)
+
+### Manufacturer Specific Guides
+#### Siemens
 * [Syngo DICOM Conformence Statement](scan_identification/siemens_syngo_info.pdf)
 * [FSPGR With IR Prep](https://mriquestions.com/ir-prepped-sequences.html)
 * [iPAT Extensions](https://www.siemens-healthineers.com/en-us/magnetic-resonance-imaging/options-and-upgrades/clinical-applications/ipat-extensions)
 * [Siemens MR Glossary](scan_identification/MRGlossary.pdf)
-* [Common Abbrevations Dictionary](https://radiopaedia.org/articles/mri-pulse-sequence-abbreviations?lang=us)
-* [What is Inversion Time](https://mrimaster.com/ti-mri/)
-* [What is SNR](https://mrimaster.com/snr/)
+#### GE
+
 
 ## References
 
-Last updated 2024-09-13 by dabrielz
+Last updated 2024-09-18 by dabrielz
