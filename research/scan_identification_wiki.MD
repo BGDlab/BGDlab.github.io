@@ -111,7 +111,7 @@ Scans do not always have all of the above fields present due to a variety of rea
 4. [Performance Evaluation]()
 
 ### Group Identification
-Scan groups were created based on the most common `ProtocolNames` in the data. These groups can be found in the [parameter ranges table](https://github.com/BGDlab/dataorg-arcus). Data was first segmentation by field strength (3T versus 1.5T) and by scan type (T1w, T2w, and FLAIR).
+Scan groups were created based on the most common `ProtocolNames` in the data. These groups can be found in the [parameter ranges table](https://github.com/BGDlab/dataorg-arcus/blob/main/step_03/parameter_ranges.tsv). Data was first segmentation by field strength (3T versus 1.5T) and by scan type (T1w, T2w, and FLAIR).
 
 ### Parameter Review
 
