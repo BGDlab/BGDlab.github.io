@@ -1,6 +1,7 @@
 title: BGDlab Docs 
 remote_theme: just-the-docs/just-the-docs
 
+markdown: kramdown
 plugins:
   - jekyll-relative-links
 relative_links:
