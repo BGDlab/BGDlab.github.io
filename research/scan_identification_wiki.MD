@@ -46,8 +46,8 @@ Great resource for understanding TR and TE: [link](https://mrimaster.com/tr-and-
 In brief:
 * **T1w** = short TR and TE
 * **T2w** = longer TR and TE
-* **PD** scans = long TR and short TE
-* **FLAIR** = longest TR and TE
+* **PD** (Proton Density weighted) scans = long TR and short TE
+* **FLAIR** (FLuid Attenuated Inversion Recovery) scans = longest TR and TE
 
 ###### T1w
 ![](scan_identification/Labelled-T1-MRI-image-showing-the-T1-appearance-of-various-tissues-in-the-brain.jpg.webp)
@@ -64,7 +64,7 @@ In brief:
 
 
 ![](scan_identification/flip_angles.png)
-`FlipAngle` is also associated with `Signal-to-Noise Ratio` and `Specific Absorption Rate` (as one increases so do the others).
+`FlipAngle` is also associated with `Signal-to-Noise Ratio` (SNR) and `Specific Absorption Rate` (as one increases so do the others).
 
 
 ### Pixel Bandwidth
@@ -80,9 +80,10 @@ Fraction of acquired acqusition matrix lines.
 Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at the same time). Reduces scan time. 
 
 ### Fat Saturation
+Under development
 
 ### Magnetization Transfer
-
+Under development
 
 
 
@@ -95,7 +96,7 @@ Number of slice obtained simultaneously (i.e. value of 4 means 4 slices taken at
 
 
 ## Metadata Informed Scan Identifcation Process
-In order to reliabily classify a scan that might have a non-descriptive or misclassified `ProtocolName` and/or `SeriesDescription`, metadata scrubbed from the dicoms is used to classify a scan into a general scan type (T1w, T2w, FLAIR) and then into a more specific sequence (i.e. TSE T1w, TIRM T2w) based on these fields:
+In order to reliabily classify a scan that might have a non-descriptive or misclassified `ProtocolName` and/or `SeriesDescription`, metadata pulled from the dicoms is used to classify a scan into a general scan type (T1w, T2w, FLAIR) and then into a more specific sequence (i.e. TSE T1w, TIRM T2w) based on these fields:
 * `RepetitionTime`
 * `EchoTime`
 * `FlipAngle`
@@ -104,7 +105,7 @@ In order to reliabily classify a scan that might have a non-descriptive or miscl
 * `PercentSampling`
 * `MultibandAccelerationFactor`
 
-Scans do not always have all of the above fields present due to a variety of reasons like year of scan (`MultibandAccelerationFactor` is a result of newer techniques, some older scanners generally output less metadata), scanner manufacturer, etc. At minimum, we expect any scan to have `RepetitionTime` and `EchoTime`. The general process for scan identification is described below.
+Scans do not always have all of the above fields present due to various archeological reasons such as year of scan (`MultibandAccelerationFactor` is a result of newer techniques, some older scanners generally output less metadata), scanner manufacturer, etc. At minimum, we expect any scan to have `RepetitionTime` and `EchoTime`. The general process for scan identification is described below.
 1. [Group Identification](#group-identification)
 2. [Parameter Review](#parameter-review)
 3. [Classifier Updates](#classifier-updates)
@@ -312,4 +313,4 @@ This section will list all of what can show up in clincal data organized after S
 
 
 
-Last updated 2024-09-27 by dabrielz
+Last updated 2024-10-01 by jmschabdach, originally written 2024-09-27 by dabrielz
